@@ -2,4 +2,4 @@ User-agent: *
 Allow: /
 Disallow: /api/
 
-Sitemap: https://refrigeratorrepairlittletonco.com/sitemap.xml
+Sitemap: https://refrigerator-repairpk.vercel.app/sitemap.xml
