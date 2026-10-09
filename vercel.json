@@ -1,0 +1,161 @@
+{
+  "cleanUrls": true,
+  "trailingSlash": false,
+  "redirects": [
+    {
+      "source": "/index.html",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/about.html",
+      "destination": "/about",
+      "permanent": true
+    },
+    {
+      "source": "/blog.html",
+      "destination": "/blog",
+      "permanent": true
+    },
+    {
+      "source": "/contact.html",
+      "destination": "/contact",
+      "permanent": true
+    },
+    {
+      "source": "/freezer-not-freezing.html",
+      "destination": "/freezer-not-freezing",
+      "permanent": true
+    },
+    {
+      "source": "/freezer-repair.html",
+      "destination": "/freezer-repair",
+      "permanent": true
+    },
+    {
+      "source": "/ice-maker-repair.html",
+      "destination": "/ice-maker-repair",
+      "permanent": true
+    },
+    {
+      "source": "/locations.html",
+      "destination": "/locations",
+      "permanent": true
+    },
+    {
+      "source": "/privacy-policy.html",
+      "destination": "/privacy-policy",
+      "permanent": true
+    },
+    {
+      "source": "/refrigerator-not-cooling.html",
+      "destination": "/refrigerator-not-cooling",
+      "permanent": true
+    },
+    {
+      "source": "/refrigerator-repair-downtown-littleton.html",
+      "destination": "/refrigerator-repair-downtown-littleton",
+      "permanent": true
+    },
+    {
+      "source": "/refrigerator-repair-littleton-village.html",
+      "destination": "/refrigerator-repair-littleton-village",
+      "permanent": true
+    },
+    {
+      "source": "/refrigerator-water-leaking.html",
+      "destination": "/refrigerator-water-leaking",
+      "permanent": true
+    },
+    {
+      "source": "/services.html",
+      "destination": "/services",
+      "permanent": true
+    },
+    {
+      "source": "/refrigerator-repair-ken-caryl.html",
+      "destination": "/refrigerator-repair-ken-caryl",
+      "permanent": true
+    },
+    {
+      "source": "/refrigerator-repair-columbine-valley.html",
+      "destination": "/refrigerator-repair-columbine-valley",
+      "permanent": true
+    },
+    {
+      "source": "/refrigerator-repair-highlands-ranch.html",
+      "destination": "/refrigerator-repair-highlands-ranch",
+      "permanent": true
+    },
+    {
+      "source": "/refrigerator-compressor-repair.html",
+      "destination": "/refrigerator-compressor-repair",
+      "permanent": true
+    },
+    {
+      "source": "/refrigerator-frost-buildup.html",
+      "destination": "/refrigerator-frost-buildup",
+      "permanent": true
+    },
+    {
+      "source": "/noisy-refrigerator-repair.html",
+      "destination": "/noisy-refrigerator-repair",
+      "permanent": true
+    },
+    {
+      "source": "/why-refrigerator-runs-constantly.html",
+      "destination": "/why-refrigerator-runs-constantly",
+      "permanent": true
+    },
+    {
+      "source": "/refrigerator-maintenance-checklist.html",
+      "destination": "/refrigerator-maintenance-checklist",
+      "permanent": true
+    },
+    {
+      "source": "/repair-vs-replace-refrigerator-guide.html",
+      "destination": "/repair-vs-replace-refrigerator-guide",
+      "permanent": true
+    },
+    {
+      "source": "/why-ice-maker-stopped-working.html",
+      "destination": "/why-ice-maker-stopped-working",
+      "permanent": true
+    },
+    {
+      "source": "/refrigerator-repair-highlands-ranch-co.html",
+      "destination": "/refrigerator-repair-highlands-ranch-co",
+      "permanent": true
+    },
+    {
+      "source": "/refrigerator-repair-englewood-co.html",
+      "destination": "/refrigerator-repair-englewood-co",
+      "permanent": true
+    },
+    {
+      "source": "/refrigerator-repair-centennial-co.html",
+      "destination": "/refrigerator-repair-centennial-co",
+      "permanent": true
+    },
+    {
+      "source": "/refrigerator-repair-greenwood-village-co.html",
+      "destination": "/refrigerator-repair-greenwood-village-co",
+      "permanent": true
+    },
+    {
+      "source": "/refrigerator-repair-columbine-valley-co.html",
+      "destination": "/refrigerator-repair-columbine-valley-co",
+      "permanent": true
+    },
+    {
+      "source": "/refrigerator-repair-highlands-ranch",
+      "destination": "/refrigerator-repair-highlands-ranch-co",
+      "permanent": true
+    },
+    {
+      "source": "/refrigerator-repair-columbine-valley",
+      "destination": "/refrigerator-repair-columbine-valley-co",
+      "permanent": true
+    }
+  ]
+}
