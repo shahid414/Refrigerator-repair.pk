@@ -161,6 +161,16 @@
       "source": "/refrigerator-repair-samsung.html",
       "destination": "/refrigerator-repair-samsung",
       "permanent": true
+    },
+    {
+      "source": "/commercial-refrigerator-repair.html",
+      "destination": "/commercial-refrigerator-repair",
+      "permanent": true
+    },
+    {
+      "source": "/refrigerator-door-repair.html",
+      "destination": "/refrigerator-door-repair",
+      "permanent": true
     }
   ]
 }
