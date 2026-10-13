@@ -156,6 +156,11 @@
       "source": "/refrigerator-repair-columbine-valley",
       "destination": "/refrigerator-repair-columbine-valley-co",
       "permanent": true
+    },
+    {
+      "source": "/refrigerator-repair-samsung.html",
+      "destination": "/refrigerator-repair-samsung",
+      "permanent": true
     }
   ]
 }
