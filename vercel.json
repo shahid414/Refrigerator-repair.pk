@@ -171,6 +171,26 @@
       "source": "/refrigerator-door-repair.html",
       "destination": "/refrigerator-door-repair",
       "permanent": true
+    },
+    {
+      "source": "/fridge-repair.html",
+      "destination": "/fridge-repair",
+      "permanent": true
+    },
+    {
+      "source": "/refrigerator-repair-technician.html",
+      "destination": "/refrigerator-repair-technician",
+      "permanent": true
+    },
+    {
+      "source": "/mini-fridge-repair.html",
+      "destination": "/mini-fridge-repair",
+      "permanent": true
+    },
+    {
+      "source": "/chest-freezer-repair.html",
+      "destination": "/chest-freezer-repair",
+      "permanent": true
     }
   ]
 }
