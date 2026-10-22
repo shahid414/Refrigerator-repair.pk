@@ -15,10 +15,11 @@ This document outlines the primary and secondary keyword groupings, target URLs,
 | **Fridge Repair Page** | `fridge repair` | `repair fridge`, `fridge repair services`, `fridge service and repair`, `fridge repair service`, `fridge refrigerator repair` | [`/fridge-repair`](file:///c:/Users/Rana%20Abid%20Mukhtar/Documents/refrigerator%20repiar/fridge-repair.html) (`fridge-repair.html`) | Created & Live |
 | **Refrigerator Technician Page** | `refrigerator repair technician` | `fridge technician`, `fridge repair technician`, `refrigerator technicians`, `technician for fridge`, `refrigerator mechanic`, `repairman for refrigerator` | [`/refrigerator-repair-technician`](file:///c:/Users/Rana%20Abid%20Mukhtar/Documents/refrigerator%20repiar/refrigerator-repair-technician.html) (`refrigerator-repair-technician.html`) | Created & Live |
 | **Freezer Repair Page** | `freezer repair` | `freezer repairs`, `refrigerator freezer repair`, `refrigerator and freezer repair`, `fridge and freezer repair`, `fridge freezer repair` | [`/freezer-repair`](file:///c:/Users/Rana%20Abid%20Mukhtar/Documents/refrigerator%20repiar/freezer-repair.html) (`freezer-repair.html`) | Optimized & Live |
-| **Ice Maker Repair Page** | `fridge ice maker repair` | `ice maker troubleshooting`, `refrigerator ice maker repair`, `fridge ice maker troubleshooting`, `ice maker repair service`, `in-door ice maker repair`, `ice maker not making ice` | [`/ice-maker-repair`](file:///c:/Users/Rana%20Abid%20Mukhtar/Documents/refrigerator%20repiar/ice-maker-repair.html) (`ice-maker-repair.html`) | Optimized & Live |
-| **Refrigerator Maintenance Page** | `refrigerator maintenance service` | `refrigerator maintenance service`, `refrigerator service`, `refrigerator services`, `refrigerator maintenance checklist`, `fridge tune-up service` | [`/refrigerator-maintenance-checklist`](file:///c:/Users/Rana%20Abid%20Mukhtar/Documents/refrigerator%20repiar/refrigerator-maintenance-checklist.html) (`refrigerator-maintenance-checklist.html`) | Optimized & Live |
+| **Ice Maker Repair Page** | `refrigerator not making ice` | `fridge ice maker repair`, `ice maker troubleshooting`, `refrigerator ice maker repair`, `fridge ice maker troubleshooting`, `ice maker repair service`, `in-door ice maker repair`, `ice maker not making ice` | [`/ice-maker-repair`](file:///c:/Users/Rana%20Abid%20Mukhtar/Documents/refrigerator%20repiar/ice-maker-repair.html) (`ice-maker-repair.html`) | Optimized & Live |
+| **Refrigerator Maintenance Page** | `fridge maintenance checklist` | `refrigerator maintenance service`, `refrigerator service`, `refrigerator services`, `refrigerator maintenance checklist`, `fridge tune-up service` | [`/refrigerator-maintenance-checklist`](file:///c:/Users/Rana%20Abid%20Mukhtar/Documents/refrigerator%20repiar/refrigerator-maintenance-checklist.html) (`refrigerator-maintenance-checklist.html`) | Optimized & Live |
 | **Mini Fridge Repair Page** | `small refrigerator repair` | `fix a mini fridge`, `repair small refrigerator`, `small refrigerator repair`, `mini fridge repair`, `compact refrigerator repair` | [`/mini-fridge-repair`](file:///c:/Users/Rana%20Abid%20Mukhtar/Documents/refrigerator%20repiar/mini-fridge-repair.html) (`mini-fridge-repair.html`) | Created & Live |
 | **Chest Freezer Repair Page** | `repair chest freezer` | `chest freezer problems`, `chest freezer troubleshooting`, `chest freezer stopped freezing`, `chest freezer stopped cooling`, `chest freezer running but not freezing`, `chest freezer won't freeze`, `chest freezer won't get cold`, `chest freezer not getting cold`, `chest freezer not cold enough`, `chest freezer is not freezing`, `chest freezer not turning on`, `chest freezer not running`, `chest freezer stopped running`, `chest freezer suddenly stopped working`, `chest freezer turns on and off`, `chest freezer no power`, `chest freezer light not working`, `chest freezer icing up`, `chest freezer not freezing properly`, `chest freezer only freezing half`, `chest freezer only freezing at top`, `chest freezer only freezing at bottom`, `chest freezer not freezing at top`, `chest freezer not freezing at the bottom`, `chest freezer hot to touch`, `chest freezer warm on outside`, `chest freezer too cold` | [`/chest-freezer-repair`](file:///c:/Users/Rana%20Abid%20Mukhtar/Documents/refrigerator%20repiar/chest-freezer-repair.html) (`chest-freezer-repair.html`) | Created & Live |
+| **Refrigerator Not Cooling Page** | `littleton cooling system repair` | `refrigerator cooling system repair`, `refrigerator not cooling littleton co`, `refrigerator not cooling`, `fridge cooling repair littleton` | [`/refrigerator-not-cooling`](file:///c:/Users/Rana%20Abid%20Mukhtar/Documents/refrigerator%20repiar/refrigerator-not-cooling.html) (`refrigerator-not-cooling.html`) | Optimized & Live |
 
 ---
 
@@ -73,21 +74,26 @@ This document outlines the primary and secondary keyword groupings, target URLs,
 
 ### 6. Ice Maker Repair Page (`ice-maker-repair.html`)
 - **Target URL:** `/ice-maker-repair`
-- **Meta Title:** `Fridge Ice Maker Repair in Littleton, CO | Ice Maker Troubleshooting`
-- **Meta Description:** `Certified fridge ice maker repair in Littleton, CO. Fast same-day ice maker troubleshooting, refrigerator ice maker repair, water valve diagnostics & leak repairs. Call now!`
-- **Meta Keywords:** `fridge ice maker repair, ice maker troubleshooting, refrigerator ice maker repair, fridge ice maker troubleshooting, ice maker repair service, in-door ice maker repair, ice maker not making ice`
+- **Primary Keyword:** `refrigerator not making ice`
+- **Meta Title:** `Refrigerator Not Making Ice? Littleton Ice Maker Repair & Service`
+- **Meta Description:** `Refrigerator not making ice? Certified technicians in Littleton, CO provide fast ice maker repair, inlet valve testing, frozen fill tube fixes & OEM part replacement. Call now!`
+- **Meta Keywords:** `refrigerator not making ice, fridge ice maker repair, ice maker troubleshooting, refrigerator ice maker repair, fridge ice maker troubleshooting, ice maker repair service, in-door ice maker repair, ice maker not making ice`
 - **On-Page Integrations:**
-  - H1: *Fridge Ice Maker Repair in Littleton, CO*.
+  - H1 updated to: *Refrigerator Not Making Ice? Littleton Ice Maker Repair*.
+  - Warning signs & symptoms card updated to *Refrigerator Not Making Ice*.
+  - FAQ schema & on-page questions include *Why is my refrigerator not making ice?*.
   - Troubleshooting guide updated with *fridge ice maker troubleshooting*, *refrigerator ice maker repair*, and *ice maker repair service*.
 
 ### 7. Refrigerator Maintenance Page (`refrigerator-maintenance-checklist.html`)
 - **Target URL:** `/refrigerator-maintenance-checklist`
-- **Meta Title:** `Refrigerator Maintenance Service Checklist | Professional Refrigerator Services`
-- **Meta Description:** `Complete refrigerator maintenance service guide and checklist. Discover professional refrigerator services, coil cleaning, and tune-up tips to extend appliance lifespan in Littleton, CO.`
-- **Meta Keywords:** `refrigerator maintenance service, refrigerator service, refrigerator services, refrigerator maintenance checklist, fridge tune-up service`
+- **Primary Keyword:** `fridge maintenance checklist`
+- **Meta Title:** `Fridge & Refrigerator Maintenance Checklist | Littleton Service Guide`
+- **Meta Description:** `Step-by-step fridge maintenance checklist and guide. Keep your refrigerator running efficiently with coil cleaning, gasket inspection & tune-up tips in Littleton, CO.`
+- **Meta Keywords:** `fridge maintenance checklist, refrigerator maintenance checklist, refrigerator maintenance service, refrigerator service, refrigerator services, fridge tune-up service`
 - **On-Page Integrations:**
-  - H1: *Refrigerator Maintenance Service Checklist & Guide*.
-  - Body text incorporates *refrigerator maintenance service*, *refrigerator services*, and *refrigerator service*.
+  - H1 updated to: *Refrigerator & Fridge Maintenance Checklist & Guide*.
+  - BlogPosting schema updated with *The Ultimate Refrigerator & Fridge Maintenance Checklist for Homeowners*.
+  - Body text incorporates *fridge maintenance checklist*, *refrigerator maintenance service*, *refrigerator services*, and *refrigerator service*.
 
 ### 8. Mini Fridge Repair Page (`mini-fridge-repair.html`) [NEW]
 - **Target URL:** `/mini-fridge-repair`
@@ -109,6 +115,18 @@ This document outlines the primary and secondary keyword groupings, target URLs,
   - Interactive Troubleshooting Matrix broken into 4 logical diagnostic clusters: Complete Cooling Loss, Electrical & Cycling Faults, Uneven Freezing Patterns, and Wall Heat & Frost/Icing Issues.
   - Linked bidirectionally with `/freezer-repair`, `/freezer-not-freezing`, `/services`, and main navigation.
   - Full schema markup included: `Service`, `LocalBusiness`, `FAQPage`, and `BreadcrumbList`.
+
+### 10. Refrigerator Not Cooling Page (`refrigerator-not-cooling.html`)
+- **Target URL:** `/refrigerator-not-cooling`
+- **Primary Keyword:** `littleton cooling system repair`
+- **Secondary Keywords:** `refrigerator cooling system repair`, `refrigerator not cooling littleton co`, `fridge cooling repair littleton`, `refrigerator not cooling`
+- **On-Page Integrations:**
+  - **Meta Title:** `Refrigerator Not Cooling? Littleton Cooling System Repair | Fast Service`
+  - **Meta Description:** `Need expert Littleton cooling system repair? Our certified technicians diagnose refrigerator cooling failures, compressors, coils & sealed systems fast. Call now!`
+  - **Meta Keywords:** `littleton cooling system repair, refrigerator cooling system repair, refrigerator not cooling littleton co, fridge cooling repair littleton`
+  - **Hero & Content:** H1 and hero copy updated to highlight certified Littleton cooling system repair and diagnostics.
+  - **FAQ:** Added dedicated FAQ item in schema and body for Littleton cooling system repair.
+  - **Cross-linking:** Linked from `/services` Card 13 with keyword triggers.
 
 ---
 

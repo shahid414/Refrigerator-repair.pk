@@ -951,47 +951,62 @@
 
 
 
-    <section class="py-24 bg-red-50 border-y border-red-200">
+    <section class="py-12 md:py-16 bg-red-50 border-y border-red-200">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="flex items-center gap-4 mb-8">
-          <div class="bg-red-600 text-white p-3">
-            <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z">
-              </path>
-            </svg>
+        <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4 mb-8">
+          <div class="flex items-center gap-3">
+            <div class="bg-red-600 text-white p-2.5 rounded">
+              <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z">
+                </path>
+              </svg>
+            </div>
+            <div>
+              <h2 class="text-2xl md:text-3xl font-black uppercase tracking-tight text-red-900">
+                Common refrigerator problems we solve
+              </h2>
+              <p class="text-sm text-red-800/80">Fast diagnostics &amp; reliable fixes for all major issues</p>
+            </div>
           </div>
-          <h2 class="text-3xl md:text-4xl font-black uppercase tracking-tight text-red-900">
-            Common refrigerator problems we solve
-          </h2>
+          <a href="tel:55512345678"
+            class="inline-flex items-center justify-center gap-2 bg-red-600 hover:bg-red-700 text-white font-bold text-xs uppercase px-4 py-2.5 rounded transition-colors self-start sm:self-auto">
+            <span>Call for Fast Fix</span>
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+            </svg>
+          </a>
         </div>
 
-        <div class="grid md:grid-cols-3 gap-8">
+        <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
+          <div class="bg-white/80 border border-red-200/80 p-4 rounded-lg shadow-xs">
+            <h3 class="font-bold text-base text-red-900 uppercase mb-1">1. Not Cooling Properly</h3>
+            <p class="text-xs text-red-950/80">Compressor failures, refrigerant leaks, and faulty fans restored fast.</p>
+          </div>
 
-          <div>
-            <h3 class="font-bold text-xl text-red-800 uppercase mb-3">Refrigerator not cooling properly</h3>
-            <p class="text-red-900/80">This common problem often stems from compressor issues or refrigerant leaks. Our
-              technicians will diagnose the cause and offer reliable repairs to restore cooling.</p>
+          <div class="bg-white/80 border border-red-200/80 p-4 rounded-lg shadow-xs">
+            <h3 class="font-bold text-base text-red-900 uppercase mb-1">2. Freezer Not Freezing</h3>
+            <p class="text-xs text-red-950/80">Faulty thermostats, defrost sensors, and blocked vents diagnosed and repaired.</p>
           </div>
-          <div>
-            <h3 class="font-bold text-xl text-red-800 uppercase mb-3">Freezer not freezing food</h3>
-            <p class="text-red-900/80">If your freezer isn't freezing, it may be due to a faulty thermostat or clogged
-              vents. We will identify and fix the issue to prevent food spoilage.</p>
+
+          <div class="bg-white/80 border border-red-200/80 p-4 rounded-lg shadow-xs">
+            <h3 class="font-bold text-base text-red-900 uppercase mb-1">3. Water Leaking</h3>
+            <p class="text-xs text-red-950/80">Clogged defrost drains cleared, cracked valves and worn door seals replaced.</p>
           </div>
-          <div>
-            <h3 class="font-bold text-xl text-red-800 uppercase mb-3">Water leaking from the refrigerator</h3>
-            <p class="text-red-900/80">Leaks can occur from damaged door seals or clogged defrost drains. Our team will
-              quickly locate the source and perform necessary repairs.</p>
+
+          <div class="bg-white/80 border border-red-200/80 p-4 rounded-lg shadow-xs">
+            <h3 class="font-bold text-base text-red-900 uppercase mb-1">4. Ice Maker Malfunctions</h3>
+            <p class="text-xs text-red-950/80">Frozen water lines, failed inlet solenoids, and jammed modules fixed promptly.</p>
           </div>
-          <div>
-            <h3 class="font-bold text-xl text-red-800 uppercase mb-3">Ice maker not producing ice</h3>
-            <p class="text-red-900/80">Ice makers can malfunction due to clogs or broken components. We will repair or
-              replace faulty parts to ensure your ice maker works efficiently.</p>
+
+          <div class="bg-white/80 border border-red-200/80 p-4 rounded-lg shadow-xs">
+            <h3 class="font-bold text-base text-red-900 uppercase mb-1">5. Excessive Frost Build-Up</h3>
+            <p class="text-xs text-red-950/80">Defrost heaters, bimetal thermostats, and door gaskets serviced to prevent ice.</p>
           </div>
-          <div>
-            <h3 class="font-bold text-xl text-red-800 uppercase mb-3">Frost build-up in the freezer</h3>
-            <p class="text-red-900/80">Excess frost can indicate airflow problems or a malfunctioning defrost heater. We
-              will resolve these issues to keep your freezer frost-free.</p>
+
+          <div class="bg-white/80 border border-red-200/80 p-4 rounded-lg shadow-xs">
+            <h3 class="font-bold text-base text-red-900 uppercase mb-1">6. Unusual or Loud Noises</h3>
+            <p class="text-xs text-red-950/80">Noisy compressor issues, worn fan bearings, and loose vibration dampeners resolved.</p>
           </div>
         </div>
       </div>
@@ -1072,420 +1087,177 @@
 
 
     <!-- RL-AUTO:locations-section START -->
-
-    <section class="py-20 bg-background border-b border-border">
+    <!-- Unified Local Coverage & Service Areas -->
+    <section id="service-areas" class="py-16 md:py-20 bg-background border-b border-border">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h2 class="text-xl font-black uppercase tracking-widest text-muted-foreground mb-6 text-center">
-          Our service areas in Littleton
-        </h2>
-        <div class="flex flex-wrap justify-center gap-2 md:gap-4">
-          <a href="refrigerator-repair-downtown-littleton.html"
-            class="px-4 py-2 border font-bold uppercase text-xs tracking-wider border-black hover:border-primary hover:text-primary transition-colors">Downtown
-            Littleton</a>
-          <a href="refrigerator-repair-littleton-village.html"
-            class="px-4 py-2 border font-bold uppercase text-xs tracking-wider border-border text-muted-foreground hover:border-primary hover:text-primary transition-colors">Littleton
-            Village</a>
-          <a href="refrigerator-repair-ken-caryl.html"
-            class="px-4 py-2 border font-bold uppercase text-xs tracking-wider border-border text-muted-foreground hover:border-primary hover:text-primary transition-colors">Ken
-            Caryl</a>
-          <a href="refrigerator-repair-columbine-valley-co.html"
-            class="px-4 py-2 border font-bold uppercase text-xs tracking-wider border-border text-muted-foreground hover:border-primary hover:text-primary transition-colors">Columbine
-            Valley</a>
-          <a href="refrigerator-repair-highlands-ranch-co.html"
-            class="px-4 py-2 border font-bold uppercase text-xs tracking-wider border-border text-muted-foreground hover:border-primary hover:text-primary transition-colors">Highlands
-            Ranch</a>
-        </div>
-      </div>
-    </section>
-
-    <!-- RL-AUTO:locations-section END -->
-
-
-    <!-- Local Landmarks Section -->
-    <section id="landmarks" class="py-24 bg-card border-b border-border tactical-grid relative">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-        <div class="text-center mb-16">
-          <div
-            class="inline-flex items-center gap-2 px-3 py-1 bg-primary/10 border border-primary/30 text-primary text-xs font-black uppercase tracking-widest mb-4">
+        
+        <!-- Header -->
+        <div class="text-center max-w-3xl mx-auto mb-12">
+          <div class="inline-flex items-center gap-2 px-3 py-1 bg-primary/10 border border-primary/30 text-primary text-xs font-black uppercase tracking-widest mb-3">
             <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
-              <path fill-rule="evenodd"
-                d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z"
-                clip-rule="evenodd" />
+              <path fill-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd" />
             </svg>
-            Community Roots &amp; Service Coverage
+            Local Coverage &amp; Fast Dispatch
           </div>
-          <h2 class="text-3xl md:text-5xl font-black uppercase tracking-tight text-foreground mb-4">
-            Littleton Landmarks We Proudly Serve
+          <h2 class="text-3xl md:text-4xl font-black uppercase tracking-tight text-foreground mb-3">
+            Serving Littleton &amp; South Denver Metro
           </h2>
-          <p class="text-muted-foreground text-base md:text-lg max-w-3xl mx-auto leading-relaxed">
-            Our certified appliance technicians live and work throughout Littleton, Colorado. Whether you reside near
-            historic cultural institutions, botanical parks, or the bustling downtown district, we provide fast,
-            dependable refrigerator and freezer repair across these iconic local landmarks.
+          <p class="text-muted-foreground text-sm md:text-base leading-relaxed">
+            Local, same-day mobile refrigerator repairs across Littleton neighborhoods, key community landmarks, and neighboring cities in Arapahoe &amp; Douglas Counties.
           </p>
         </div>
 
-        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-          <!-- 1. Downtown Littleton -->
-          <div
-            class="bg-background p-8 rounded-2xl border-2 border-border hover:border-primary transition-all duration-300 shadow-sm hover:shadow-xl flex flex-col group">
-            <div class="flex items-center justify-between mb-4">
-              <span
-                class="inline-block px-3 py-1 bg-primary text-white text-[10px] font-black uppercase tracking-wider">
-                Historic Center
-              </span>
-              <span class="text-xs font-bold text-zinc-500 uppercase tracking-wider">Historic District</span>
-            </div>
-            <div class="flex items-center gap-3 mb-3">
-              <div
-                class="w-10 h-10 rounded-xl bg-primary/10 flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-white transition-colors">
-                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                    d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
-                </svg>
-              </div>
-              <h3
-                class="text-xl font-black uppercase tracking-tight text-foreground group-hover:text-primary transition-colors">
-                Downtown Littleton
-              </h3>
-            </div>
-            <p class="text-sm text-muted-foreground leading-relaxed mb-6 flex-1">
-              The vibrant historic heart of Littleton, featuring brick-paved sidewalks, independent eateries, and
-              vintage homes. Our technicians frequently repair refrigerators, freezers, and wine coolers for Downtown
-              Littleton residents and culinary businesses.
-            </p>
-            <div class="pt-4 border-t border-border flex items-center justify-between">
-              <span class="text-xs font-bold text-zinc-500">Service: Immediate</span>
-              <a href="refrigerator-repair-downtown-littleton.html"
-                class="font-bold text-xs uppercase tracking-widest text-primary hover:text-foreground transition-colors flex items-center gap-1">
-                Explore Area <span class="text-sm">→</span>
-              </a>
-            </div>
-          </div>
-
-          <!-- 2. Littleton Main Street -->
-          <div
-            class="bg-background p-8 rounded-2xl border-2 border-border hover:border-primary transition-all duration-300 shadow-sm hover:shadow-xl flex flex-col group">
-            <div class="flex items-center justify-between mb-4">
-              <span
-                class="inline-block px-3 py-1 bg-primary text-white text-[10px] font-black uppercase tracking-wider">
-                Historic Corridor
-              </span>
-              <span class="text-xs font-bold text-zinc-500 uppercase tracking-wider">Commercial &amp; Lofts</span>
-            </div>
-            <div class="flex items-center gap-3 mb-3">
-              <div
-                class="w-10 h-10 rounded-xl bg-primary/10 flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-white transition-colors">
-                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                    d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z" />
-                </svg>
-              </div>
-              <h3
-                class="text-xl font-black uppercase tracking-tight text-foreground group-hover:text-primary transition-colors">
-                Littleton Main Street
-              </h3>
-            </div>
-            <p class="text-sm text-muted-foreground leading-relaxed mb-6 flex-1">
-              Littleton’s celebrated central avenue lined with restored 19th-century storefronts, cafes, and modern
-              upper-floor residences. We provide same-day troubleshooting for cooling failures, compressor faults, and
-              water leaks along Main Street.
-            </p>
-            <div class="pt-4 border-t border-border flex items-center justify-between">
-              <span class="text-xs font-bold text-zinc-500">W. Main St Corridor</span>
-              <a href="contact.html"
-                class="font-bold text-xs uppercase tracking-widest text-primary hover:text-foreground transition-colors flex items-center gap-1">
-                Book Service <span class="text-sm">→</span>
-              </a>
-            </div>
-          </div>
-
-          <!-- 3. Hudson Gardens -->
-          <div
-            class="bg-background p-8 rounded-2xl border-2 border-border hover:border-primary transition-all duration-300 shadow-sm hover:shadow-xl flex flex-col group">
-            <div class="flex items-center justify-between mb-4">
-              <span
-                class="inline-block px-3 py-1 bg-primary text-white text-[10px] font-black uppercase tracking-wider">
-                Botanical Landmark
-              </span>
-              <span class="text-xs font-bold text-zinc-500 uppercase tracking-wider">30-Acre Venue</span>
-            </div>
-            <div class="flex items-center gap-3 mb-3">
-              <div
-                class="w-10 h-10 rounded-xl bg-primary/10 flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-white transition-colors">
-                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                    d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
-                </svg>
-              </div>
-              <h3
-                class="text-xl font-black uppercase tracking-tight text-foreground group-hover:text-primary transition-colors">
-                Hudson Gardens
-              </h3>
-            </div>
-            <p class="text-sm text-muted-foreground leading-relaxed mb-6 flex-1">
-              Located at 6115 S Santa Fe Drive, this 30-acre botanical haven and concert venue borders active
-              residential neighborhoods along the Mary Carter Greenway Trail. We service French door, side-by-side, and
-              luxury units in this scenic district daily.
-            </p>
-            <div class="pt-4 border-t border-border flex items-center justify-between">
-              <span class="text-xs font-bold text-zinc-500">S Santa Fe Dr Area</span>
-              <a href="contact.html"
-                class="font-bold text-xs uppercase tracking-widest text-primary hover:text-foreground transition-colors flex items-center gap-1">
-                Request Repair <span class="text-sm">→</span>
-              </a>
-            </div>
-          </div>
-
-          <!-- 4. Littleton Museum -->
-          <div
-            class="bg-background p-8 rounded-2xl border-2 border-border hover:border-primary transition-all duration-300 shadow-sm hover:shadow-xl flex flex-col group">
-            <div class="flex items-center justify-between mb-4">
-              <span
-                class="inline-block px-3 py-1 bg-primary text-white text-[10px] font-black uppercase tracking-wider">
-                Cultural Institution
-              </span>
-              <span class="text-xs font-bold text-zinc-500 uppercase tracking-wider">Living History</span>
-            </div>
-            <div class="flex items-center gap-3 mb-3">
-              <div
-                class="w-10 h-10 rounded-xl bg-primary/10 flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-white transition-colors">
-                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                    d="M8 14v3m4-3v3m4-3v3M3 21h18M3 10h18M3 7l9-4 9 4M4 10h16v11H4V10z" />
-                </svg>
-              </div>
-              <h3
-                class="text-xl font-black uppercase tracking-tight text-foreground group-hover:text-primary transition-colors">
-                Littleton Museum
-              </h3>
-            </div>
-            <p class="text-sm text-muted-foreground leading-relaxed mb-6 flex-1">
-              Situated on South Gallup Street by Ketring Lake, this 39-acre Smithsonian Affiliate is surrounded by
-              established family homes and quiet residential avenues. Our technicians offer rapid repair for ice makers,
-              defrost boards, and thermostats nearby.
-            </p>
-            <div class="pt-4 border-t border-border flex items-center justify-between">
-              <span class="text-xs font-bold text-zinc-500">S Gallup St &amp; Ketring</span>
-              <a href="contact.html"
-                class="font-bold text-xs uppercase tracking-widest text-primary hover:text-foreground transition-colors flex items-center gap-1">
-                Schedule Service <span class="text-sm">→</span>
-              </a>
-            </div>
-          </div>
-
-          <!-- 5. Town Hall Arts Center -->
-          <div
-            class="bg-background p-8 rounded-2xl border-2 border-border hover:border-primary transition-all duration-300 shadow-sm hover:shadow-xl flex flex-col group">
-            <div class="flex items-center justify-between mb-4">
-              <span
-                class="inline-block px-3 py-1 bg-primary text-white text-[10px] font-black uppercase tracking-wider">
-                Performing Arts
-              </span>
-              <span class="text-xs font-bold text-zinc-500 uppercase tracking-wider">Historic 1920 Hall</span>
-            </div>
-            <div class="flex items-center gap-3 mb-3">
-              <div
-                class="w-10 h-10 rounded-xl bg-primary/10 flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-white transition-colors">
-                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                    d="M7 4v16M17 4v16M3 8h4m10 0h4M3 12h18M3 16h4m10 0h4M4 20h16a1 1 0 001-1V5a1 1 0 00-1-1H4a1 1 0 00-1 1v14a1 1 0 001 1z" />
-                </svg>
-              </div>
-              <h3
-                class="text-xl font-black uppercase tracking-tight text-foreground group-hover:text-primary transition-colors">
-                Town Hall Arts Center
-              </h3>
-            </div>
-            <p class="text-sm text-muted-foreground leading-relaxed mb-6 flex-1">
-              Located at 2450 W Main Street in Littleton’s historic town hall, this cultural pillar anchors community
-              events. We provide dependable appliance diagnostics for nearby townhouses, historic bungalows, and local
-              kitchens within walking distance.
-            </p>
-            <div class="pt-4 border-t border-border flex items-center justify-between">
-              <span class="text-xs font-bold text-zinc-500">2450 W Main St</span>
-              <a href="contact.html"
-                class="font-bold text-xs uppercase tracking-widest text-primary hover:text-foreground transition-colors flex items-center gap-1">
-                Get Quick Quote <span class="text-sm">→</span>
-              </a>
-            </div>
-          </div>
-
-          <!-- 6. Same-Day Local Dispatch -->
-          <div
-            class="bg-zinc-900 text-white p-8 rounded-2xl border-2 border-primary flex flex-col justify-between shadow-2xl relative overflow-hidden group">
-            <div class="absolute -right-8 -bottom-8 w-32 h-32 bg-primary/20 rounded-full blur-2xl pointer-events-none">
-            </div>
+        <div class="grid lg:grid-cols-12 gap-8 items-start mb-10">
+          
+          <!-- Column 1: Littleton Local Neighborhoods & Landmarks -->
+          <div class="lg:col-span-5 bg-card border border-border p-6 rounded-2xl flex flex-col justify-between h-full shadow-xs">
             <div>
-              <div class="flex items-center justify-between mb-4">
-                <span
-                  class="inline-block px-3 py-1 bg-primary text-white text-[10px] font-black uppercase tracking-wider">
-                  24/7 Dispatch
-                </span>
-                <span class="text-xs font-bold text-primary uppercase tracking-wider">All Landmarks</span>
-              </div>
-              <div class="flex items-center gap-3 mb-3">
-                <div class="w-10 h-10 rounded-xl bg-primary flex items-center justify-center text-white">
-                  <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                      d="M13 10V3L4 14h7v7l9-11h-7z" />
-                  </svg>
-                </div>
-                <h3 class="text-xl font-black uppercase tracking-tight text-white">
-                  Same-Day Local Repairs
+              <div class="flex items-center justify-between mb-4 pb-3 border-b border-border">
+                <h3 class="text-lg font-black uppercase tracking-tight text-foreground">
+                  Littleton Neighborhoods
                 </h3>
+                <span class="text-xs font-bold text-primary bg-primary/10 px-2.5 py-1 rounded">Primary Hub</span>
               </div>
-              <p class="text-sm text-zinc-400 leading-relaxed mb-6">
-                Live near one of these Littleton landmarks? Our mobile service vehicles carry OEM parts for Sub-Zero,
-                Whirlpool, GE, Samsung, and LG to restore cooling on our very first visit.
+              <p class="text-xs text-muted-foreground mb-4 leading-relaxed">
+                Prompt mobile response for homes, condos, and businesses near Littleton’s central hubs and historic landmarks:
               </p>
+              
+              <!-- Dedicated pages in Littleton -->
+              <div class="grid sm:grid-cols-3 gap-2 mb-4">
+                <a href="refrigerator-repair-downtown-littleton.html"
+                  class="p-2.5 bg-background border border-border hover:border-primary text-center rounded-lg transition-colors group">
+                  <span class="block text-xs font-bold text-foreground group-hover:text-primary">Downtown</span>
+                  <span class="text-[10px] text-muted-foreground">Littleton</span>
+                </a>
+                <a href="refrigerator-repair-littleton-village.html"
+                  class="p-2.5 bg-background border border-border hover:border-primary text-center rounded-lg transition-colors group">
+                  <span class="block text-xs font-bold text-foreground group-hover:text-primary">Village</span>
+                  <span class="text-[10px] text-muted-foreground">E Fremont</span>
+                </a>
+                <a href="refrigerator-repair-ken-caryl.html"
+                  class="p-2.5 bg-background border border-border hover:border-primary text-center rounded-lg transition-colors group">
+                  <span class="block text-xs font-bold text-foreground group-hover:text-primary">Ken Caryl</span>
+                  <span class="text-[10px] text-muted-foreground">Valley &amp; Ranch</span>
+                </a>
+              </div>
+
+              <!-- Landmarks covered -->
+              <div class="bg-muted/50 p-3.5 rounded-xl border border-border/60">
+                <span class="text-[11px] font-bold uppercase tracking-wider text-muted-foreground block mb-2">Key Landmarks Served:</span>
+                <div class="flex flex-wrap gap-1.5 text-xs">
+                  <span class="px-2 py-1 bg-background border border-border/80 rounded text-foreground text-[11px]">Historic Main Street</span>
+                  <span class="px-2 py-1 bg-background border border-border/80 rounded text-foreground text-[11px]">Hudson Gardens</span>
+                  <span class="px-2 py-1 bg-background border border-border/80 rounded text-foreground text-[11px]">Littleton Museum / Ketring</span>
+                  <span class="px-2 py-1 bg-background border border-border/80 rounded text-foreground text-[11px]">Town Hall Arts Center</span>
+                </div>
+              </div>
             </div>
-            <div class="pt-4 border-t border-zinc-800 flex items-center justify-between">
-              <span class="text-xs font-bold text-zinc-400">Response: 1-2 Hours</span>
-              <a href="tel:55512345678"
-                class="font-black text-xs uppercase tracking-widest text-primary hover:text-white transition-colors flex items-center gap-1">
-                Call 555-123-45678 <span class="text-sm">→</span>
+
+            <div class="mt-6 pt-4 border-t border-border flex items-center justify-between text-xs">
+              <span class="font-bold text-muted-foreground">Average Arrival:</span>
+              <span class="font-black text-primary">1 - 2 Hours (Same-Day)</span>
+            </div>
+          </div>
+
+          <!-- Column 2: Surrounding Cities (Dedicated Regional Pages) -->
+          <div class="lg:col-span-7 bg-card border border-border p-6 rounded-2xl shadow-xs">
+            <div class="flex items-center justify-between mb-4 pb-3 border-b border-border">
+              <h3 class="text-lg font-black uppercase tracking-tight text-foreground">
+                Nearby Cities We Service
+              </h3>
+              <span class="text-xs text-muted-foreground">Arapahoe &amp; Douglas Counties</span>
+            </div>
+            <p class="text-xs text-muted-foreground mb-4">
+              Click any neighboring community to view localized service details and dispatch times:
+            </p>
+
+            <div class="grid sm:grid-cols-2 gap-3">
+              <a href="refrigerator-repair-highlands-ranch-co.html"
+                class="p-3 bg-background border border-border hover:border-primary rounded-xl transition-all group flex items-center justify-between">
+                <div>
+                  <div class="flex items-center gap-1.5">
+                    <span class="font-bold text-xs text-foreground group-hover:text-primary">Highlands Ranch, CO</span>
+                  </div>
+                  <span class="text-[10px] text-muted-foreground">Backcountry, Eastridge &amp; Westridge</span>
+                </div>
+                <span class="text-xs font-bold text-primary group-hover:translate-x-1 transition-transform">→</span>
+              </a>
+
+              <a href="refrigerator-repair-englewood-co.html"
+                class="p-3 bg-background border border-border hover:border-primary rounded-xl transition-all group flex items-center justify-between">
+                <div>
+                  <div class="flex items-center gap-1.5">
+                    <span class="font-bold text-xs text-foreground group-hover:text-primary">Englewood, CO</span>
+                  </div>
+                  <span class="text-[10px] text-muted-foreground">Broadway &amp; Swedish Hospital District</span>
+                </div>
+                <span class="text-xs font-bold text-primary group-hover:translate-x-1 transition-transform">→</span>
+              </a>
+
+              <a href="refrigerator-repair-centennial-co.html"
+                class="p-3 bg-background border border-border hover:border-primary rounded-xl transition-all group flex items-center justify-between">
+                <div>
+                  <div class="flex items-center gap-1.5">
+                    <span class="font-bold text-xs text-foreground group-hover:text-primary">Centennial, CO</span>
+                  </div>
+                  <span class="text-[10px] text-muted-foreground">Willow Creek, Smoky Hill &amp; Southglenn</span>
+                </div>
+                <span class="text-xs font-bold text-primary group-hover:translate-x-1 transition-transform">→</span>
+              </a>
+
+              <a href="refrigerator-repair-greenwood-village-co.html"
+                class="p-3 bg-background border border-border hover:border-primary rounded-xl transition-all group flex items-center justify-between">
+                <div>
+                  <div class="flex items-center gap-1.5">
+                    <span class="font-bold text-xs text-foreground group-hover:text-primary">Greenwood Village, CO</span>
+                  </div>
+                  <span class="text-[10px] text-muted-foreground">DTC &amp; High-End Built-in Refrigeration</span>
+                </div>
+                <span class="text-xs font-bold text-primary group-hover:translate-x-1 transition-transform">→</span>
+              </a>
+
+              <a href="refrigerator-repair-columbine-valley-co.html"
+                class="p-3 bg-background border border-border hover:border-primary rounded-xl transition-all group flex items-center justify-between sm:col-span-2">
+                <div>
+                  <div class="flex items-center gap-1.5">
+                    <span class="font-bold text-xs text-foreground group-hover:text-primary">Columbine Valley, CO</span>
+                  </div>
+                  <span class="text-[10px] text-muted-foreground">Columbine Country Club, Burning Tree &amp; Polo Reserve</span>
+                </div>
+                <span class="text-xs font-bold text-primary group-hover:translate-x-1 transition-transform">→</span>
               </a>
             </div>
           </div>
         </div>
-      </div>
-    </section>
 
-
-
-    <!-- Regional Service Areas Across South Denver Metro -->
-    <section id="service-areas-metro" class="py-24 bg-card border-b border-border tactical-grid relative">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-        <div class="text-center mb-16 max-w-3xl mx-auto">
-          <div
-            class="inline-flex items-center gap-2 px-3 py-1 bg-primary/10 border border-primary/30 text-primary text-xs font-black uppercase tracking-widest mb-4">
-            <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
-              <path fill-rule="evenodd"
-                d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z"
-                clip-rule="evenodd" />
+        <!-- ZIP Codes & Rapid Response Strip -->
+        <div class="bg-muted p-5 rounded-xl border border-border flex flex-col md:flex-row items-center justify-between gap-4">
+          <div class="text-center md:text-left">
+            <span class="text-xs font-bold uppercase tracking-wider text-foreground block mb-1">
+              Active Littleton &amp; Arapahoe County Zip Codes:
+            </span>
+            <div class="flex flex-wrap justify-center md:justify-start gap-1.5">
+              <span class="px-2.5 py-1 bg-card border border-border rounded text-xs font-semibold text-foreground">80120</span>
+              <span class="px-2.5 py-1 bg-card border border-border rounded text-xs font-semibold text-foreground">80122</span>
+              <span class="px-2.5 py-1 bg-card border border-border rounded text-xs font-semibold text-foreground">80123</span>
+              <span class="px-2.5 py-1 bg-card border border-border rounded text-xs font-semibold text-foreground">80128</span>
+              <span class="px-2.5 py-1 bg-card border border-border rounded text-xs font-semibold text-foreground">80160</span>
+              <span class="px-2.5 py-1 bg-card border border-border rounded text-xs font-semibold text-foreground">80165</span>
+              <span class="px-2.5 py-1 bg-card border border-border rounded text-xs font-semibold text-foreground">80166</span>
+            </div>
+          </div>
+          <a href="tel:55512345678"
+            class="whitespace-nowrap bg-primary hover:bg-orange-700 text-white font-bold text-xs uppercase px-5 py-3 rounded-lg transition-colors flex items-center gap-2">
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5l2-2h4l2 4-2 2a13.3 13.3 0 006 6l2-2 4 2-2 2a2 2 0 01-2 2H5a2 2 0 01-2-2v-5z"></path>
             </svg>
-            Regional Service Coverage
-          </div>
-          <h2 class="text-3xl md:text-5xl font-black uppercase tracking-tight text-foreground mb-4">
-            Serving Littleton &amp; Surrounding Cities
-          </h2>
-          <p class="text-muted-foreground text-base md:text-lg leading-relaxed">
-            Headquartered in Littleton, CO, our certified technicians travel daily to five neighboring communities
-            across Arapahoe and Douglas Counties with same-day emergency dispatch.
-          </p>
-        </div>
-
-        <div class="grid sm:grid-cols-2 lg:grid-cols-5 gap-4">
-          <a href="refrigerator-repair-highlands-ranch-co.html"
-            class="bg-background p-6 rounded-xl border-2 border-border hover:border-primary transition-all duration-300 shadow-sm hover:shadow-md flex flex-col justify-between group">
-            <div>
-              <span
-                class="text-[10px] font-black uppercase tracking-wider text-primary bg-primary/10 px-2 py-0.5 mb-3 inline-block">Douglas
-                Co.</span>
-              <h3
-                class="font-black uppercase text-base text-foreground group-hover:text-primary transition-colors mb-2">
-                Highlands Ranch, CO</h3>
-              <p class="text-xs text-muted-foreground leading-relaxed mb-4">Northridge, Eastridge, Westridge &amp;
-                Backcountry master-planned estates.</p>
-            </div>
-            <span
-              class="text-xs font-bold text-primary flex items-center gap-1 group-hover:translate-x-1 transition-transform">Explore
-              City →</span>
-          </a>
-
-          <a href="refrigerator-repair-englewood-co.html"
-            class="bg-background p-6 rounded-xl border-2 border-border hover:border-primary transition-all duration-300 shadow-sm hover:shadow-md flex flex-col justify-between group">
-            <div>
-              <span
-                class="text-[10px] font-black uppercase tracking-wider text-primary bg-primary/10 px-2 py-0.5 mb-3 inline-block">Arapahoe
-                Co.</span>
-              <h3
-                class="font-black uppercase text-base text-foreground group-hover:text-primary transition-colors mb-2">
-                Englewood, CO</h3>
-              <p class="text-xs text-muted-foreground leading-relaxed mb-4">Broadway bungalows, CityCenter lofts,
-                Swedish Hospital district.</p>
-            </div>
-            <span
-              class="text-xs font-bold text-primary flex items-center gap-1 group-hover:translate-x-1 transition-transform">Explore
-              City →</span>
-          </a>
-
-          <a href="refrigerator-repair-centennial-co.html"
-            class="bg-background p-6 rounded-xl border-2 border-border hover:border-primary transition-all duration-300 shadow-sm hover:shadow-md flex flex-col justify-between group">
-            <div>
-              <span
-                class="text-[10px] font-black uppercase tracking-wider text-primary bg-primary/10 px-2 py-0.5 mb-3 inline-block">Arapahoe
-                Co.</span>
-              <h3
-                class="font-black uppercase text-base text-foreground group-hover:text-primary transition-colors mb-2">
-                Centennial, CO</h3>
-              <p class="text-xs text-muted-foreground leading-relaxed mb-4">Willow Creek, Smoky Hill, Southglenn &amp;
-                family subdivisions.</p>
-            </div>
-            <span
-              class="text-xs font-bold text-primary flex items-center gap-1 group-hover:translate-x-1 transition-transform">Explore
-              City →</span>
-          </a>
-
-          <a href="refrigerator-repair-greenwood-village-co.html"
-            class="bg-background p-6 rounded-xl border-2 border-border hover:border-primary transition-all duration-300 shadow-sm hover:shadow-md flex flex-col justify-between group">
-            <div>
-              <span
-                class="text-[10px] font-black uppercase tracking-wider text-primary bg-primary/10 px-2 py-0.5 mb-3 inline-block">Luxury
-                / DTC</span>
-              <h3
-                class="font-black uppercase text-base text-foreground group-hover:text-primary transition-colors mb-2">
-                Greenwood Village, CO</h3>
-              <p class="text-xs text-muted-foreground leading-relaxed mb-4">Sub-Zero, Viking &amp; Thermador built-in
-                luxury estates &amp; DTC.</p>
-            </div>
-            <span
-              class="text-xs font-bold text-primary flex items-center gap-1 group-hover:translate-x-1 transition-transform">Explore
-              City →</span>
-          </a>
-
-          <a href="refrigerator-repair-columbine-valley-co.html"
-            class="bg-background p-6 rounded-xl border-2 border-border hover:border-primary transition-all duration-300 shadow-sm hover:shadow-md flex flex-col justify-between group">
-            <div>
-              <span
-                class="text-[10px] font-black uppercase tracking-wider text-primary bg-primary/10 px-2 py-0.5 mb-3 inline-block">Country
-                Club</span>
-              <h3
-                class="font-black uppercase text-base text-foreground group-hover:text-primary transition-colors mb-2">
-                Columbine Valley, CO</h3>
-              <p class="text-xs text-muted-foreground leading-relaxed mb-4">Columbine Country Club, Burning Tree &amp;
-                Polo Reserve estates.</p>
-            </div>
-            <span
-              class="text-xs font-bold text-primary flex items-center gap-1 group-hover:translate-x-1 transition-transform">Explore
-              City →</span>
+            <span>Call for Dispatch: 555-123-45678</span>
           </a>
         </div>
+
       </div>
     </section>
-
-    <section class="py-16 bg-background">
-      <div class="container mx-auto px-6">
-        <div class="max-w-5xl mx-auto text-center">
-          <span class="inline-block px-4 py-1 rounded-full bg-muted text-primary text-sm font-medium mb-3">Service
-            Area</span>
-          <h2 class="text-2xl md:text-3xl font-bold text-foreground mb-3">Refrigerator repair Coverage Across Littleton
-            &amp; Arapahoe County</h2>
-          <p class="text-muted-foreground max-w-3xl mx-auto mb-6">Routine and same-week appointments for residents and
-            businesses across <strong class="text-foreground">Arapahoe County</strong>, including the ZIP codes below.
-          </p>
-          <div class="flex flex-wrap justify-center gap-2 max-w-3xl mx-auto"><span
-              class="px-4 py-2 rounded-full border border-border bg-card text-sm font-semibold text-foreground">80128</span><span
-              class="px-4 py-2 rounded-full border border-border bg-card text-sm font-semibold text-foreground">80122</span><span
-              class="px-4 py-2 rounded-full border border-border bg-card text-sm font-semibold text-foreground">80123</span><span
-              class="px-4 py-2 rounded-full border border-border bg-card text-sm font-semibold text-foreground">80120</span><span
-              class="px-4 py-2 rounded-full border border-border bg-card text-sm font-semibold text-foreground">80160</span><span
-              class="px-4 py-2 rounded-full border border-border bg-card text-sm font-semibold text-foreground">80165</span><span
-              class="px-4 py-2 rounded-full border border-border bg-card text-sm font-semibold text-foreground">80166</span>
-          </div>
-        </div>
-      </div>
-    </section>
+    <!-- RL-AUTO:locations-section END -->
 
 
     <section class="w-full h-[60vh] min-h-[400px] bg-zinc-900 relative">
