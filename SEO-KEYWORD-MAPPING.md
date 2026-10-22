@@ -21,6 +21,7 @@ This document outlines the primary and secondary keyword groupings, target URLs,
 | **Chest Freezer Repair Page** | `repair chest freezer` | `chest freezer problems`, `chest freezer troubleshooting`, `chest freezer stopped freezing`, `chest freezer stopped cooling`, `chest freezer running but not freezing`, `chest freezer won't freeze`, `chest freezer won't get cold`, `chest freezer not getting cold`, `chest freezer not cold enough`, `chest freezer is not freezing`, `chest freezer not turning on`, `chest freezer not running`, `chest freezer stopped running`, `chest freezer suddenly stopped working`, `chest freezer turns on and off`, `chest freezer no power`, `chest freezer light not working`, `chest freezer icing up`, `chest freezer not freezing properly`, `chest freezer only freezing half`, `chest freezer only freezing at top`, `chest freezer only freezing at bottom`, `chest freezer not freezing at top`, `chest freezer not freezing at the bottom`, `chest freezer hot to touch`, `chest freezer warm on outside`, `chest freezer too cold` | [`/chest-freezer-repair`](file:///c:/Users/Rana%20Abid%20Mukhtar/Documents/refrigerator%20repiar/chest-freezer-repair.html) (`chest-freezer-repair.html`) | Created & Live |
 | **Refrigerator Not Cooling Page** | `littleton cooling system repair` | `refrigerator cooling system repair`, `refrigerator not cooling littleton co`, `refrigerator not cooling`, `fridge cooling repair littleton` | [`/refrigerator-not-cooling`](file:///c:/Users/Rana%20Abid%20Mukhtar/Documents/refrigerator%20repiar/refrigerator-not-cooling.html) (`refrigerator-not-cooling.html`) | Optimized & Live |
 | **Ice Maker Troubleshooting Guide** | `why is my fridge ice maker not making ice` | `why did my refrigerator ice maker stop making ice`, `fridge ice maker not making ice`, `why is my refrigerator not making ice`, `ice maker troubleshooting` | [`/why-ice-maker-stopped-working`](file:///c:/Users/Rana%20Abid%20Mukhtar/Documents/refrigerator%20repiar/why-ice-maker-stopped-working.html) (`why-ice-maker-stopped-working.html`) | Optimized & Live |
+| **Refrigerator Running Guide** | `refrigerator runs continuously` | `refrigerator runs constantly`, `fridge running continuously`, `refrigerator running non stop`, `compressor runs constantly` | [`/why-refrigerator-runs-constantly`](file:///c:/Users/Rana%20Abid%20Mukhtar/Documents/refrigerator%20repiar/why-refrigerator-runs-constantly.html) (`why-refrigerator-runs-constantly.html`) | Optimized & Live |
 
 ---
 
@@ -140,6 +141,17 @@ This document outlines the primary and secondary keyword groupings, target URLs,
   - **Meta Keywords:** `why is my fridge ice maker not making ice, fridge ice maker not making ice, why is my refrigerator not making ice, ice maker stopped making ice, ice maker troubleshooting`
   - **Hero & Content:** H1 and opening paragraph updated with the target query.
   - **BlogPosting Schema:** Updated headline with *Why Is My Fridge Ice Maker Not Making Ice? (Quick Solutions & Diagnostic Guide)*.
+
+### 12. Refrigerator Running Constantly / Continuously Guide (`why-refrigerator-runs-constantly.html`)
+- **Target URL:** `/why-refrigerator-runs-constantly`
+- **Primary Keyword:** `refrigerator runs continuously`
+- **Secondary Keywords:** `refrigerator runs constantly`, `fridge running continuously`, `refrigerator running non stop`, `compressor runs constantly`
+- **On-Page Integrations:**
+  - **Meta Title:** `Why Refrigerator Runs Constantly or Continuously? (Causes & Fixes)`
+  - **Meta Description:** `Is your refrigerator running continuously without cycling off? Discover why your refrigerator runs constantly, electric bill impacts & fixes in Littleton, CO.`
+  - **Meta Keywords:** `refrigerator runs continuously, refrigerator runs constantly, fridge running continuously, refrigerator running non stop, compressor runs constantly`
+  - **Hero & Content:** H1 updated to *Why Refrigerator Runs Constantly or Continuously? (Causes & Fixes)* with body copy highlighting running continuously.
+  - **Cross-linking:** Filterable on `/services` Card 13.
 
 ---
 
