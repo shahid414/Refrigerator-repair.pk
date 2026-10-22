@@ -20,6 +20,7 @@ This document outlines the primary and secondary keyword groupings, target URLs,
 | **Mini Fridge Repair Page** | `small refrigerator repair` | `fix a mini fridge`, `repair small refrigerator`, `small refrigerator repair`, `mini fridge repair`, `compact refrigerator repair` | [`/mini-fridge-repair`](file:///c:/Users/Rana%20Abid%20Mukhtar/Documents/refrigerator%20repiar/mini-fridge-repair.html) (`mini-fridge-repair.html`) | Created & Live |
 | **Chest Freezer Repair Page** | `repair chest freezer` | `chest freezer problems`, `chest freezer troubleshooting`, `chest freezer stopped freezing`, `chest freezer stopped cooling`, `chest freezer running but not freezing`, `chest freezer won't freeze`, `chest freezer won't get cold`, `chest freezer not getting cold`, `chest freezer not cold enough`, `chest freezer is not freezing`, `chest freezer not turning on`, `chest freezer not running`, `chest freezer stopped running`, `chest freezer suddenly stopped working`, `chest freezer turns on and off`, `chest freezer no power`, `chest freezer light not working`, `chest freezer icing up`, `chest freezer not freezing properly`, `chest freezer only freezing half`, `chest freezer only freezing at top`, `chest freezer only freezing at bottom`, `chest freezer not freezing at top`, `chest freezer not freezing at the bottom`, `chest freezer hot to touch`, `chest freezer warm on outside`, `chest freezer too cold` | [`/chest-freezer-repair`](file:///c:/Users/Rana%20Abid%20Mukhtar/Documents/refrigerator%20repiar/chest-freezer-repair.html) (`chest-freezer-repair.html`) | Created & Live |
 | **Refrigerator Not Cooling Page** | `littleton cooling system repair` | `refrigerator cooling system repair`, `refrigerator not cooling littleton co`, `refrigerator not cooling`, `fridge cooling repair littleton` | [`/refrigerator-not-cooling`](file:///c:/Users/Rana%20Abid%20Mukhtar/Documents/refrigerator%20repiar/refrigerator-not-cooling.html) (`refrigerator-not-cooling.html`) | Optimized & Live |
+| **Ice Maker Troubleshooting Guide** | `why is my fridge ice maker not making ice` | `why did my refrigerator ice maker stop making ice`, `fridge ice maker not making ice`, `why is my refrigerator not making ice`, `ice maker troubleshooting` | [`/why-ice-maker-stopped-working`](file:///c:/Users/Rana%20Abid%20Mukhtar/Documents/refrigerator%20repiar/why-ice-maker-stopped-working.html) (`why-ice-maker-stopped-working.html`) | Optimized & Live |
 
 ---
 
@@ -127,6 +128,17 @@ This document outlines the primary and secondary keyword groupings, target URLs,
   - **Hero & Content:** H1 and hero copy updated to highlight certified Littleton cooling system repair and diagnostics.
   - **FAQ:** Added dedicated FAQ item in schema and body for Littleton cooling system repair.
   - **Cross-linking:** Linked from `/services` Card 13 with keyword triggers.
+
+### 11. Ice Maker Troubleshooting Guide (`why-ice-maker-stopped-working.html`)
+- **Target URL:** `/why-ice-maker-stopped-working`
+- **Primary Keyword:** `why is my fridge ice maker not making ice`
+- **Secondary Keywords:** `why did my refrigerator ice maker stop making ice`, `fridge ice maker not making ice`, `why is my refrigerator not making ice`, `ice maker troubleshooting`
+- **On-Page Integrations:**
+  - **Meta Title:** `Why Is My Fridge Ice Maker Not Making Ice? (Quick Solutions)`
+  - **Meta Description:** `Wondering why is my fridge ice maker not making ice? Step-by-step diagnostic guide for frozen water lines, faulty inlet valves, and jammed shut-off arms in Littleton, CO.`
+  - **Meta Keywords:** `why is my fridge ice maker not making ice, fridge ice maker not making ice, why is my refrigerator not making ice, ice maker stopped making ice, ice maker troubleshooting`
+  - **Hero & Content:** H1 and opening paragraph updated with the target query.
+  - **BlogPosting Schema:** Updated headline with *Why Is My Fridge Ice Maker Not Making Ice? (Quick Solutions & Diagnostic Guide)*.
 
 ---
 
