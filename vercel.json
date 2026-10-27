@@ -201,6 +201,11 @@
       "source": "/refrigerator-repair-castle-rock",
       "destination": "/refrigerator-repair-castle-rock-co",
       "permanent": true
+    },
+    {
+      "source": "/emergency-refrigerator-repair.html",
+      "destination": "/emergency-refrigerator-repair",
+      "permanent": true
     }
   ]
 }
