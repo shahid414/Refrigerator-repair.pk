@@ -189,7 +189,12 @@
     },
     {
       "source": "/chest-freezer-repair.html",
-      "destination": "/chest-freezer-repair",
+      "destination": "/freezer-repair",
+      "permanent": true
+    },
+    {
+      "source": "/chest-freezer-repair",
+      "destination": "/freezer-repair",
       "permanent": true
     },
     {
