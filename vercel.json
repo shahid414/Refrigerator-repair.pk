@@ -206,6 +206,21 @@
       "source": "/emergency-refrigerator-repair.html",
       "destination": "/emergency-refrigerator-repair",
       "permanent": true
+    },
+    {
+      "source": "/refrigerator-repair-denver-county-co.html",
+      "destination": "/refrigerator-repair-denver-county-co",
+      "permanent": true
+    },
+    {
+      "source": "/refrigerator-repair-denver-county",
+      "destination": "/refrigerator-repair-denver-county-co",
+      "permanent": true
+    },
+    {
+      "source": "/denver-county",
+      "destination": "/refrigerator-repair-denver-county-co",
+      "permanent": true
     }
   ]
 }
