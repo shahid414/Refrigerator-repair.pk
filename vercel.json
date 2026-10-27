@@ -191,6 +191,16 @@
       "source": "/chest-freezer-repair.html",
       "destination": "/chest-freezer-repair",
       "permanent": true
+    },
+    {
+      "source": "/refrigerator-repair-castle-rock-co.html",
+      "destination": "/refrigerator-repair-castle-rock-co",
+      "permanent": true
+    },
+    {
+      "source": "/refrigerator-repair-castle-rock",
+      "destination": "/refrigerator-repair-castle-rock-co",
+      "permanent": true
     }
   ]
 }
