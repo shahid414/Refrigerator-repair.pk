@@ -226,6 +226,21 @@
       "source": "/denver-county",
       "destination": "/refrigerator-repair-denver-county-co",
       "permanent": true
+    },
+    {
+      "source": "/frigidaire-refrigerator-repair.html",
+      "destination": "/frigidaire-refrigerator-repair",
+      "permanent": true
+    },
+    {
+      "source": "/refrigerator-repair-frigidaire",
+      "destination": "/frigidaire-refrigerator-repair",
+      "permanent": true
+    },
+    {
+      "source": "/refrigerator-repair-frigidaire.html",
+      "destination": "/frigidaire-refrigerator-repair",
+      "permanent": true
     }
   ]
 }
