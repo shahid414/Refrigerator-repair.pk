@@ -126,6 +126,7 @@ This document outlines the primary and secondary keyword groupings, target URLs,
 ### 11. Ice Maker Troubleshooting Guide (`why-ice-maker-stopped-working.html`)
 - **Target URL:** `/why-ice-maker-stopped-working`
 - **Primary Keyword:** `why did my ice maker stop making ice`
+- **Problem Keywords (Refrigerator Not Making Ice):** `refrigerator won’t make ice`, `fridge stopped making ice`, `why my refrigerator not making ice`, `ice maker fridge not making ice`, `fridge icemaker not making ice`, `fridge ice machine not making ice`, `ice machine in fridge not making ice`, `ice maker wont make ice`, `no ice in ice maker`, `no ice from ice maker`, `automatic ice maker not making ice`, `new frigidaire refrigerator not making ice`, `frigidaire fridge not making ice even after turning on`, `fridge not making ice but water works`, `frigidaire gallery refrigerator not making ice but water works`, `frigidaire gallery not making ice but water works`, `frigidaire refrigerator ice maker not making ice but water works`
 - **Secondary Keywords:** `ice maker will not make ice`, `fridge not making ice`, `why is my fridge ice maker not making ice`, `why did my refrigerator ice maker stop making ice`, `ice maker stopped working`, `ice maker troubleshooting`
 - **On-Page Integrations:**
   - **Meta Title:** `Fridge Not Making Ice? Why Ice Maker Stopped & Quick Fixes`
