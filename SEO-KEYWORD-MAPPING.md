@@ -126,7 +126,7 @@ This document outlines the primary and secondary keyword groupings, target URLs,
 ### 11. Ice Maker Troubleshooting Guide (`why-ice-maker-stopped-working.html`)
 - **Target URL:** `/why-ice-maker-stopped-working`
 - **Primary Keyword:** `why did my ice maker stop making ice`
-- **Secondary Keywords:** `fridge not making ice`, `why is my fridge ice maker not making ice`, `why did my refrigerator ice maker stop making ice`, `fridge ice maker not making ice`, `why is my refrigerator not making ice`, `ice maker stopped working`, `ice maker troubleshooting`
+- **Secondary Keywords:** `ice maker will not make ice`, `fridge not making ice`, `why is my fridge ice maker not making ice`, `why did my refrigerator ice maker stop making ice`, `ice maker stopped working`, `ice maker troubleshooting`
 - **On-Page Integrations:**
   - **Meta Title:** `Fridge Not Making Ice? Why Ice Maker Stopped & Quick Fixes`
   - **Meta Description:** `Is your fridge not making ice? Step-by-step diagnostic guide for why your refrigerator ice maker stopped working: frozen water lines, inlet valves, thermostats & fixes in Littleton, CO.`
