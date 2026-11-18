@@ -34,57 +34,6 @@
     "@type": "AdministrativeArea",
     "name": "Greenwood Village"
   },
-  "aggregateRating": {
-    "@type": "AggregateRating",
-    "ratingValue": "4.9",
-    "reviewCount": 3,
-    "bestRating": "5",
-    "worstRating": "1"
-  },
-  "review": [
-    {
-      "@type": "Review",
-      "author": {
-        "@type": "Person",
-        "name": "Victoria B."
-      },
-      "reviewRating": {
-        "@type": "Rating",
-        "ratingValue": "5.0",
-        "bestRating": "5",
-        "worstRating": "1"
-      },
-      "reviewBody": "Our 48-inch built-in Sub-Zero was displaying a service error light and warming up. The technician arrived with full protective floor mats, diagnosed a faulty condenser fan, and had the genuine Sub-Zero part in his van. First-class professional service!"
-    },
-    {
-      "@type": "Review",
-      "author": {
-        "@type": "Person",
-        "name": "Jonathan D."
-      },
-      "reviewRating": {
-        "@type": "Rating",
-        "ratingValue": "5.0",
-        "bestRating": "5",
-        "worstRating": "1"
-      },
-      "reviewBody": "Finding someone truly qualified to repair Thermador integrated column refrigeration is tough. These guys diagnosed our cooling damper issue quickly and fixed it without touching the custom millwork. Highly recommended."
-    },
-    {
-      "@type": "Review",
-      "author": {
-        "@type": "Person",
-        "name": "Elizabeth R."
-      },
-      "reviewRating": {
-        "@type": "Rating",
-        "ratingValue": "5.0",
-        "bestRating": "5",
-        "worstRating": "1"
-      },
-      "reviewBody": "Our undercounter clear ice machine stopped harvesting. Technician performed a full system flush, replaced the water pump, and now we have crystal clear ice again. Fair pricing and wonderful communication."
-    }
-  ],
   "image": "https://refrigerator-repairpk.vercel.app/assets/images/gen/technician-service-call-kitchen.jpg",
   "priceRange": "$$"
 }
@@ -372,12 +321,34 @@
     var f=e.target;
     if(!f||!f.matches||!f.matches('form[data-rl-lead]')) return;
     var hp=f.querySelector('[name=_hp]'); if(hp&&hp.value) return;
+    e.preventDefault();
+    var btn=f.querySelector('button[type=submit],input[type=submit]');
+    var status=f.querySelector('.rl-status');
+    var origText=btn?btn.textContent:'';
+    if(btn){btn.disabled=true;btn.textContent='Sending\u2026';}
+    if(status) status.textContent='Sending\u2026';
     var data={}; var els=f.querySelectorAll('input,textarea,select');
     for(var i=0;i<els.length;i++){ var el=els[i]; var n=el.name;
       if(!n||n==='_hp'||n==='cf-turnstile-response') continue; data[n]=el.value; }
     data.pageUrl=window.location.href;
     var tok=f.querySelector('[name=cf-turnstile-response]'); if(tok&&tok.value) data.turnstileToken=tok.value;
-    try{ fetch(C.apiBase+'/api/leads/'+encodeURIComponent(C.siteId),{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(data),keepalive:true}).catch(function(){}); }catch(_e){}
+    try{
+      fetch(C.apiBase+'/api/leads/'+encodeURIComponent(C.siteId),{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(data),keepalive:true}).then(function(r){
+        if(r&&r.ok){
+          if(status) status.textContent='Request received \u2014 we will call you shortly.';
+          if(btn) btn.textContent='Request Received';
+        } else {
+          if(status) status.textContent='Something went wrong \u2014 please call (720) 473-5289 or try again.';
+          if(btn){btn.disabled=false;btn.textContent=origText;}
+        }
+      }).catch(function(){
+        if(status) status.textContent='Something went wrong \u2014 please call (720) 473-5289 or try again.';
+        if(btn){btn.disabled=false;btn.textContent=origText;}
+      });
+    }catch(_e){
+      if(status) status.textContent='Something went wrong \u2014 please call (720) 473-5289 or try again.';
+      if(btn){btn.disabled=false;btn.textContent=origText;}
+    }
   },true);
 })();
 </script>
@@ -989,54 +960,6 @@
       </div>
     </section>
 
-    <!-- REVIEWS SECTION -->
-    <section class="py-24 bg-background border-b border-border">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="text-center mb-16 max-w-3xl mx-auto">
-<h2 class="text-2xl sm:text-3xl font-black uppercase tracking-tighter text-foreground mb-4">
-            Customer Reviews From Greenwood Village
-          </h2>
-          <div class="flex items-center justify-center gap-1 text-amber-500 mb-2">
-            ★★★★★
-          </div>
-          <p class="text-sm font-bold text-muted-foreground">Rated 4.9 / 5.0 based on real residential service visits</p>
-        </div>
-
-        <div class="grid md:grid-cols-3 gap-8">
-          
-          <div class="bg-card p-8 rounded-xl border border-border flex flex-col justify-between">
-            <div>
-              <div class="flex items-center justify-between mb-4">
-                <div class="text-amber-500 font-bold text-sm">★★★★★</div>
-                <span class="text-xs text-muted-foreground">Preserve at Greenwood Village</span>
-              </div>
-              <p class="text-sm text-foreground/90 italic leading-relaxed mb-6">"Our 48-inch built-in Sub-Zero was displaying a service error light and warming up. The technician arrived with full protective floor mats, diagnosed a faulty condenser fan, and had the genuine Sub-Zero part in his van. First-class professional service!"</p>
-            </div>
-            <div class="font-bold text-xs uppercase tracking-wider text-primary">— Victoria B.</div>
-          </div>
-          <div class="bg-card p-8 rounded-xl border border-border flex flex-col justify-between">
-            <div>
-              <div class="flex items-center justify-between mb-4">
-                <div class="text-amber-500 font-bold text-sm">★★★★★</div>
-                <span class="text-xs text-muted-foreground">The Landmark, Greenwood Village</span>
-              </div>
-              <p class="text-sm text-foreground/90 italic leading-relaxed mb-6">"Finding someone truly qualified to repair Thermador integrated column refrigeration is tough. These guys diagnosed our cooling damper issue quickly and fixed it without touching the custom millwork. Highly recommended."</p>
-            </div>
-            <div class="font-bold text-xs uppercase tracking-wider text-primary">— Jonathan D.</div>
-          </div>
-          <div class="bg-card p-8 rounded-xl border border-border flex flex-col justify-between">
-            <div>
-              <div class="flex items-center justify-between mb-4">
-                <div class="text-amber-500 font-bold text-sm">★★★★★</div>
-                <span class="text-xs text-muted-foreground">High Line Canal Area, GV</span>
-              </div>
-              <p class="text-sm text-foreground/90 italic leading-relaxed mb-6">"Our undercounter clear ice machine stopped harvesting. Technician performed a full system flush, replaced the water pump, and now we have crystal clear ice again. Fair pricing and wonderful communication."</p>
-            </div>
-            <div class="font-bold text-xs uppercase tracking-wider text-primary">— Elizabeth R.</div>
-          </div>
-        </div>
-      </div>
-    </section>
 
     <!-- REGIONAL SERVICE AREAS SECTION -->
     <section class="py-20 bg-card border-b border-border tactical-grid relative">
@@ -1224,6 +1147,7 @@
                 <button type="submit" class="w-full bg-primary text-white font-black uppercase tracking-widest py-4 rounded text-sm hover:bg-orange-700 transition-colors">
                   Request Priority Appointment
                 </button>
+                <p class="rl-status text-sm font-bold mt-4 text-white" aria-live="polite"></p>
               </form>
             </div>
           </div>

@@ -125,12 +125,34 @@
     var f=e.target;
     if(!f||!f.matches||!f.matches('form[data-rl-lead]')) return;
     var hp=f.querySelector('[name=_hp]'); if(hp&&hp.value) return;
+    e.preventDefault();
+    var btn=f.querySelector('button[type=submit],input[type=submit]');
+    var status=f.querySelector('.rl-status');
+    var origText=btn?btn.textContent:'';
+    if(btn){btn.disabled=true;btn.textContent='Sending\u2026';}
+    if(status) status.textContent='Sending\u2026';
     var data={}; var els=f.querySelectorAll('input,textarea,select');
     for(var i=0;i<els.length;i++){ var el=els[i]; var n=el.name;
       if(!n||n==='_hp'||n==='cf-turnstile-response') continue; data[n]=el.value; }
     data.pageUrl=window.location.href;
     var tok=f.querySelector('[name=cf-turnstile-response]'); if(tok&&tok.value) data.turnstileToken=tok.value;
-    try{ fetch(C.apiBase+'/api/leads/'+encodeURIComponent(C.siteId),{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(data),keepalive:true}).catch(function(){}); }catch(_e){}
+    try{
+      fetch(C.apiBase+'/api/leads/'+encodeURIComponent(C.siteId),{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(data),keepalive:true}).then(function(r){
+        if(r&&r.ok){
+          if(status) status.textContent='Request received \u2014 we will call you shortly.';
+          if(btn) btn.textContent='Request Received';
+        } else {
+          if(status) status.textContent='Something went wrong \u2014 please call (720) 473-5289 or try again.';
+          if(btn){btn.disabled=false;btn.textContent=origText;}
+        }
+      }).catch(function(){
+        if(status) status.textContent='Something went wrong \u2014 please call (720) 473-5289 or try again.';
+        if(btn){btn.disabled=false;btn.textContent=origText;}
+      });
+    }catch(_e){
+      if(status) status.textContent='Something went wrong \u2014 please call (720) 473-5289 or try again.';
+      if(btn){btn.disabled=false;btn.textContent=origText;}
+    }
   },true);
 })();
 </script>
@@ -390,9 +412,28 @@
             </li>
           </ul>
 
-          <a href="contact.html" class="w-full text-center bg-primary text-white text-xl font-black uppercase tracking-widest py-6 hover:bg-orange-700 transition-all active:scale-[0.98] shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] hover:shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] hover:translate-y-1 hover:translate-x-1 border-2 border-black block">
-            Get a quote
-          </a>
+          <form class="space-y-6" data-rl-lead>
+            <div>
+              <label class="block font-bold uppercase text-xs tracking-wider mb-2 text-black">First Name</label>
+              <input type="text" name="name" class="w-full border-2 border-black bg-white p-3 focus:outline-none focus:border-primary transition-colors" required />
+            </div>
+            <div>
+              <label class="block font-bold uppercase text-xs tracking-wider mb-2 text-black">Phone</label>
+              <input type="tel" name="phone" placeholder="(720) 473-5289" class="w-full border-2 border-black bg-white p-3 focus:outline-none focus:border-primary transition-colors" required />
+            </div>
+            <div>
+              <label class="block font-bold uppercase text-xs tracking-wider mb-2 text-black">Target Address / Zip</label>
+              <input type="text" name="zip" class="w-full border-2 border-black bg-white p-3 focus:outline-none focus:border-primary transition-colors" required />
+            </div>
+            <div>
+              <label class="block font-bold uppercase text-xs tracking-wider mb-2 text-black">Issue Details</label>
+              <textarea rows="4" name="message" class="w-full border-2 border-black bg-white p-3 focus:outline-none focus:border-primary transition-colors resize-none"></textarea>
+            </div>
+            <button type="submit" class="w-full bg-primary text-white font-black uppercase tracking-widest py-4 hover:bg-orange-700 transition-colors">
+              Request Service
+            </button>
+            <p class="rl-status text-sm font-bold mt-4 text-black" aria-live="polite"></p>
+          </form>
         </div>
       </section>
 

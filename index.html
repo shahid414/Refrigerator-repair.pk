@@ -248,100 +248,7 @@
       "closes": "23:59"
     }
   ],
-  "priceRange": "$",
-  "aggregateRating": {
-    "@type": "AggregateRating",
-    "ratingValue": "5.0",
-    "reviewCount": 6,
-    "bestRating": "5",
-    "worstRating": "1"
-  },
-  "review": [
-    {
-      "@type": "Review",
-      "author": {
-        "@type": "Person",
-        "name": "Emily R."
-      },
-      "reviewRating": {
-        "@type": "Rating",
-        "ratingValue": "5",
-        "bestRating": "5",
-        "worstRating": "1"
-      },
-      "reviewBody": "I called for refrigerator repair on a Sunday, and they were at my house within an hour. The technician was friendly and fixed the issue quickly. Highly recommend!"
-    },
-    {
-      "@type": "Review",
-      "author": {
-        "@type": "Person",
-        "name": "Mark T."
-      },
-      "reviewRating": {
-        "@type": "Rating",
-        "ratingValue": "5",
-        "bestRating": "5",
-        "worstRating": "1"
-      },
-      "reviewBody": "The team diagnosed my fridge problem efficiently. They explained everything and had my refrigerator cooling again in no time. Great service!"
-    },
-    {
-      "@type": "Review",
-      "author": {
-        "@type": "Person",
-        "name": "Sarah K."
-      },
-      "reviewRating": {
-        "@type": "Rating",
-        "ratingValue": "5",
-        "bestRating": "5",
-        "worstRating": "1"
-      },
-      "reviewBody": "I had a water leak from my refrigerator. They arrived fast and fixed it without any hassle. I'm very satisfied with their service!"
-    },
-    {
-      "@type": "Review",
-      "author": {
-        "@type": "Person",
-        "name": "James W."
-      },
-      "reviewRating": {
-        "@type": "Rating",
-        "ratingValue": "5",
-        "bestRating": "5",
-        "worstRating": "1"
-      },
-      "reviewBody": "Their technician was knowledgeable and had all the tools needed. My ice maker is working perfectly now. Thank you for the quick turnaround!"
-    },
-    {
-      "@type": "Review",
-      "author": {
-        "@type": "Person",
-        "name": "Laura M."
-      },
-      "reviewRating": {
-        "@type": "Rating",
-        "ratingValue": "5",
-        "bestRating": "5",
-        "worstRating": "1"
-      },
-      "reviewBody": "I was impressed with the professionalism. They offered a warranty on the repair, which gave me confidence. Highly recommended!"
-    },
-    {
-      "@type": "Review",
-      "author": {
-        "@type": "Person",
-        "name": "Tom B."
-      },
-      "reviewRating": {
-        "@type": "Rating",
-        "ratingValue": "5",
-        "bestRating": "5",
-        "worstRating": "1"
-      },
-      "reviewBody": "Affordable and reliable! They fixed my freezer issues quickly, and I couldn't be happier. Will definitely call them again!"
-    }
-  ]
+  "priceRange": "$"
 }
 </script>
   <script type="application/ld+json">
@@ -501,6 +408,12 @@
         var f = e.target;
         if (!f || !f.matches || !f.matches('form[data-rl-lead]')) return;
         var hp = f.querySelector('[name=_hp]'); if (hp && hp.value) return;
+        e.preventDefault();
+        var btn = f.querySelector('button[type=submit],input[type=submit]');
+        var status = f.querySelector('.rl-status');
+        var origText = btn ? btn.textContent : '';
+        if (btn) { btn.disabled = true; btn.textContent = 'Sending\u2026'; }
+        if (status) status.textContent = 'Sending\u2026';
         var data = {}; var els = f.querySelectorAll('input,textarea,select');
         for (var i = 0; i < els.length; i++) {
           var el = els[i]; var n = el.name;
@@ -508,7 +421,23 @@
         }
         data.pageUrl = window.location.href;
         var tok = f.querySelector('[name=cf-turnstile-response]'); if (tok && tok.value) data.turnstileToken = tok.value;
-        try { fetch(C.apiBase + '/api/leads/' + encodeURIComponent(C.siteId), { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(data), keepalive: true }).catch(function () { }); } catch (_e) { }
+        try {
+          fetch(C.apiBase + '/api/leads/' + encodeURIComponent(C.siteId), { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(data), keepalive: true }).then(function (r) {
+            if (r && r.ok) {
+              if (status) status.textContent = 'Request received \u2014 we will call you shortly.';
+              if (btn) btn.textContent = 'Request Received';
+            } else {
+              if (status) status.textContent = 'Something went wrong \u2014 please call (720) 473-5289 or try again.';
+              if (btn) { btn.disabled = false; btn.textContent = origText; }
+            }
+          }).catch(function () {
+            if (status) status.textContent = 'Something went wrong \u2014 please call (720) 473-5289 or try again.';
+            if (btn) { btn.disabled = false; btn.textContent = origText; }
+          });
+        } catch (_e) {
+          if (status) status.textContent = 'Something went wrong \u2014 please call (720) 473-5289 or try again.';
+          if (btn) { btn.disabled = false; btn.textContent = origText; }
+        }
       }, true);
     })();
   </script>
@@ -1861,8 +1790,7 @@
         <h2 class="text-xl sm:text-2xl font-black uppercase tracking-tighter mb-8 text-foreground">
           Request Immediate Action
         </h2>
-        <form class="space-y-6" data-rl-lead
-          onsubmit="event.preventDefault();var b=this.querySelector('button[type=submit]');if(b){b.disabled=true;b.textContent='Request Received';}">
+        <form class="space-y-6" data-rl-lead>
           <div class="grid grid-cols-2 gap-6">
             <div class="col-span-2 sm:col-span-1">
               <label class="block font-bold uppercase text-xs tracking-wider mb-2">First Name</label>
@@ -1890,8 +1818,9 @@
           </div>
           <button type="submit"
             class="w-full bg-black text-white font-black uppercase tracking-widest py-4 hover:bg-primary transition-colors">
-            Submit Target Data
+            Request Service
           </button>
+          <p class="rl-status text-sm font-bold mt-4" aria-live="polite"></p>
         </form>
       </div>
     </section>

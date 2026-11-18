@@ -34,57 +34,6 @@
     "@type": "AdministrativeArea",
     "name": "Centennial"
   },
-  "aggregateRating": {
-    "@type": "AggregateRating",
-    "ratingValue": "4.9",
-    "reviewCount": 3,
-    "bestRating": "5",
-    "worstRating": "1"
-  },
-  "review": [
-    {
-      "@type": "Review",
-      "author": {
-        "@type": "Person",
-        "name": "Rebecca L."
-      },
-      "reviewRating": {
-        "@type": "Rating",
-        "ratingValue": "5.0",
-        "bestRating": "5",
-        "worstRating": "1"
-      },
-      "reviewBody": "Our KitchenAid refrigerator was warming up and our food was about to spoil. The technician arrived within two hours of calling, pinpointed a failed evaporator fan motor, and had it replaced right away. Courteous, honest, and very reasonable pricing!"
-    },
-    {
-      "@type": "Review",
-      "author": {
-        "@type": "Person",
-        "name": "Kevin H."
-      },
-      "reviewRating": {
-        "@type": "Rating",
-        "ratingValue": "5.0",
-        "bestRating": "5",
-        "worstRating": "1"
-      },
-      "reviewBody": "The ice maker in our Samsung French door fridge stopped dispensing. Tech diagnosed the frozen waterline and replaced the dual inlet valve. Smooth, professional experience from start to finish."
-    },
-    {
-      "@type": "Review",
-      "author": {
-        "@type": "Person",
-        "name": "Sarah M."
-      },
-      "reviewRating": {
-        "@type": "Rating",
-        "ratingValue": "5.0",
-        "bestRating": "5",
-        "worstRating": "1"
-      },
-      "reviewBody": "Outstanding service. Arrived on time with a 30-minute heads-up call. Replaced our refrigerator defrost heater and got our temps back to a steady 37°F. Will definitely use them again."
-    }
-  ],
   "image": "https://refrigerator-repairpk.vercel.app/assets/images/gen/technician-service-call-kitchen.jpg",
   "priceRange": "$$"
 }
@@ -372,12 +321,34 @@
     var f=e.target;
     if(!f||!f.matches||!f.matches('form[data-rl-lead]')) return;
     var hp=f.querySelector('[name=_hp]'); if(hp&&hp.value) return;
+    e.preventDefault();
+    var btn=f.querySelector('button[type=submit],input[type=submit]');
+    var status=f.querySelector('.rl-status');
+    var origText=btn?btn.textContent:'';
+    if(btn){btn.disabled=true;btn.textContent='Sending\u2026';}
+    if(status) status.textContent='Sending\u2026';
     var data={}; var els=f.querySelectorAll('input,textarea,select');
     for(var i=0;i<els.length;i++){ var el=els[i]; var n=el.name;
       if(!n||n==='_hp'||n==='cf-turnstile-response') continue; data[n]=el.value; }
     data.pageUrl=window.location.href;
     var tok=f.querySelector('[name=cf-turnstile-response]'); if(tok&&tok.value) data.turnstileToken=tok.value;
-    try{ fetch(C.apiBase+'/api/leads/'+encodeURIComponent(C.siteId),{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(data),keepalive:true}).catch(function(){}); }catch(_e){}
+    try{
+      fetch(C.apiBase+'/api/leads/'+encodeURIComponent(C.siteId),{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(data),keepalive:true}).then(function(r){
+        if(r&&r.ok){
+          if(status) status.textContent='Request received \u2014 we will call you shortly.';
+          if(btn) btn.textContent='Request Received';
+        } else {
+          if(status) status.textContent='Something went wrong \u2014 please call (720) 473-5289 or try again.';
+          if(btn){btn.disabled=false;btn.textContent=origText;}
+        }
+      }).catch(function(){
+        if(status) status.textContent='Something went wrong \u2014 please call (720) 473-5289 or try again.';
+        if(btn){btn.disabled=false;btn.textContent=origText;}
+      });
+    }catch(_e){
+      if(status) status.textContent='Something went wrong \u2014 please call (720) 473-5289 or try again.';
+      if(btn){btn.disabled=false;btn.textContent=origText;}
+    }
   },true);
 })();
 </script>
@@ -989,54 +960,6 @@
       </div>
     </section>
 
-    <!-- REVIEWS SECTION -->
-    <section class="py-24 bg-background border-b border-border">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="text-center mb-16 max-w-3xl mx-auto">
-<h2 class="text-2xl sm:text-3xl font-black uppercase tracking-tighter text-foreground mb-4">
-            Customer Reviews From Centennial
-          </h2>
-          <div class="flex items-center justify-center gap-1 text-amber-500 mb-2">
-            ★★★★★
-          </div>
-          <p class="text-sm font-bold text-muted-foreground">Rated 4.9 / 5.0 based on real residential service visits</p>
-        </div>
-
-        <div class="grid md:grid-cols-3 gap-8">
-          
-          <div class="bg-card p-8 rounded-xl border border-border flex flex-col justify-between">
-            <div>
-              <div class="flex items-center justify-between mb-4">
-                <div class="text-amber-500 font-bold text-sm">★★★★★</div>
-                <span class="text-xs text-muted-foreground">Willow Creek, Centennial</span>
-              </div>
-              <p class="text-sm text-foreground/90 italic leading-relaxed mb-6">"Our KitchenAid refrigerator was warming up and our food was about to spoil. The technician arrived within two hours of calling, pinpointed a failed evaporator fan motor, and had it replaced right away. Courteous, honest, and very reasonable pricing!"</p>
-            </div>
-            <div class="font-bold text-xs uppercase tracking-wider text-primary">— Rebecca L.</div>
-          </div>
-          <div class="bg-card p-8 rounded-xl border border-border flex flex-col justify-between">
-            <div>
-              <div class="flex items-center justify-between mb-4">
-                <div class="text-amber-500 font-bold text-sm">★★★★★</div>
-                <span class="text-xs text-muted-foreground">Southglenn, Centennial</span>
-              </div>
-              <p class="text-sm text-foreground/90 italic leading-relaxed mb-6">"The ice maker in our Samsung French door fridge stopped dispensing. Tech diagnosed the frozen waterline and replaced the dual inlet valve. Smooth, professional experience from start to finish."</p>
-            </div>
-            <div class="font-bold text-xs uppercase tracking-wider text-primary">— Kevin H.</div>
-          </div>
-          <div class="bg-card p-8 rounded-xl border border-border flex flex-col justify-between">
-            <div>
-              <div class="flex items-center justify-between mb-4">
-                <div class="text-amber-500 font-bold text-sm">★★★★★</div>
-                <span class="text-xs text-muted-foreground">Smoky Hill, Centennial</span>
-              </div>
-              <p class="text-sm text-foreground/90 italic leading-relaxed mb-6">"Outstanding service. Arrived on time with a 30-minute heads-up call. Replaced our refrigerator defrost heater and got our temps back to a steady 37°F. Will definitely use them again."</p>
-            </div>
-            <div class="font-bold text-xs uppercase tracking-wider text-primary">— Sarah M.</div>
-          </div>
-        </div>
-      </div>
-    </section>
 
     <!-- FAQS ACCORDION -->
     <section class="py-24 bg-muted border-b border-border">
@@ -1158,6 +1081,7 @@
                 <button type="submit" class="w-full bg-primary text-white font-black uppercase tracking-widest py-4 rounded text-sm hover:bg-orange-700 transition-colors">
                   Request Priority Appointment
                 </button>
+                <p class="rl-status text-sm font-bold mt-4 text-white" aria-live="polite"></p>
               </form>
             </div>
           </div>
