@@ -1,6 +1,12 @@
 {
   "cleanUrls": true,
   "trailingSlash": false,
+  "rewrites": [
+    {
+      "source": "/googlef5c0a094e987a3bb.html",
+      "destination": "/googlef5c0a094e987a3bb.html"
+    }
+  ],
   "redirects": [
     {
       "source": "/index.html",
@@ -28,11 +34,6 @@
       "permanent": true
     },
     {
-      "source": "/freezer-repair.html",
-      "destination": "/freezer-repair",
-      "permanent": true
-    },
-    {
       "source": "/ice-maker-repair.html",
       "destination": "/ice-maker-repair",
       "permanent": true
@@ -45,11 +46,6 @@
     {
       "source": "/privacy-policy.html",
       "destination": "/privacy-policy",
-      "permanent": true
-    },
-    {
-      "source": "/refrigerator-not-cooling.html",
-      "destination": "/refrigerator-not-cooling",
       "permanent": true
     },
     {
@@ -178,23 +174,8 @@
       "permanent": true
     },
     {
-      "source": "/refrigerator-repair-technician.html",
-      "destination": "/refrigerator-repair-technician",
-      "permanent": true
-    },
-    {
       "source": "/mini-fridge-repair.html",
       "destination": "/mini-fridge-repair",
-      "permanent": true
-    },
-    {
-      "source": "/chest-freezer-repair.html",
-      "destination": "/freezer-repair",
-      "permanent": true
-    },
-    {
-      "source": "/chest-freezer-repair",
-      "destination": "/freezer-repair",
       "permanent": true
     },
     {
@@ -240,6 +221,51 @@
     {
       "source": "/refrigerator-repair-frigidaire.html",
       "destination": "/frigidaire-refrigerator-repair",
+      "permanent": true
+    },
+    {
+      "source": "/refrigerator-repair-technician.html",
+      "destination": "/about",
+      "permanent": true
+    },
+    {
+      "source": "/refrigerator-repair-technician",
+      "destination": "/about",
+      "permanent": true
+    },
+    {
+      "source": "/freezer-repair.html",
+      "destination": "/freezer-not-freezing",
+      "permanent": true
+    },
+    {
+      "source": "/freezer-repair",
+      "destination": "/freezer-not-freezing",
+      "permanent": true
+    },
+    {
+      "source": "/chest-freezer-repair.html",
+      "destination": "/freezer-not-freezing",
+      "permanent": true
+    },
+    {
+      "source": "/chest-freezer-repair",
+      "destination": "/freezer-not-freezing",
+      "permanent": true
+    },
+    {
+      "source": "/refrigerator-not-cooling.html",
+      "destination": "/fridge-repair",
+      "permanent": true
+    },
+    {
+      "source": "/refrigerator-not-cooling",
+      "destination": "/fridge-repair",
+      "permanent": true
+    },
+    {
+      "source": "/lg-french-door-refrigerator-repair-guide.html",
+      "destination": "/lg-french-door-refrigerator-repair-guide",
       "permanent": true
     }
   ]

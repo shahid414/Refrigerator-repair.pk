@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Contact Our Littleton Appliance Repair Team | Fast Response</title>
+    <title>Need Fridge Help Now? Call Littleton's Experts Today</title>
     <meta name="description" content="Need expert Littleton cooling system repair? Get in touch with our certified technicians at (720) 473-5289 for fast, same-day service across Littleton, CO.">
     <meta name="keywords" content="littleton cooling system repair, cooling system repair littleton, refrigerator repair contact littleton co">
     <meta name="robots" content="index, follow">
@@ -125,15 +125,81 @@
     var f=e.target;
     if(!f||!f.matches||!f.matches('form[data-rl-lead]')) return;
     var hp=f.querySelector('[name=_hp]'); if(hp&&hp.value) return;
+    e.preventDefault();
+    var btn=f.querySelector('button[type=submit],input[type=submit]');
+    var status=f.querySelector('.rl-status');
+    var origText=btn?btn.textContent:'';
+    if(btn){btn.disabled=true;btn.textContent='Sending\u2026';}
+    if(status) status.textContent='Sending\u2026';
     var data={}; var els=f.querySelectorAll('input,textarea,select');
     for(var i=0;i<els.length;i++){ var el=els[i]; var n=el.name;
       if(!n||n==='_hp'||n==='cf-turnstile-response') continue; data[n]=el.value; }
     data.pageUrl=window.location.href;
     var tok=f.querySelector('[name=cf-turnstile-response]'); if(tok&&tok.value) data.turnstileToken=tok.value;
-    try{ fetch(C.apiBase+'/api/leads/'+encodeURIComponent(C.siteId),{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(data),keepalive:true}).catch(function(){}); }catch(_e){}
+    try{
+      fetch(C.apiBase+'/api/leads/'+encodeURIComponent(C.siteId),{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(data),keepalive:true}).then(function(r){
+        if(r&&r.ok){
+          if(status) status.textContent='Request received \u2014 we will call you shortly.';
+          if(btn) btn.textContent='Request Received';
+        } else {
+          if(status) status.textContent='Something went wrong \u2014 please call (720) 473-5289 or try again.';
+          if(btn){btn.disabled=false;btn.textContent=origText;}
+        }
+      }).catch(function(){
+        if(status) status.textContent='Something went wrong \u2014 please call (720) 473-5289 or try again.';
+        if(btn){btn.disabled=false;btn.textContent=origText;}
+      });
+    }catch(_e){
+      if(status) status.textContent='Something went wrong \u2014 please call (720) 473-5289 or try again.';
+      if(btn){btn.disabled=false;btn.textContent=origText;}
+    }
   },true);
 })();
 </script>
+    <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": [
+          "ContactPage",
+          "WebPage"
+        ],
+        "@id": "https://refrigerator-repairpk.vercel.app/contact#webpage",
+        "url": "https://refrigerator-repairpk.vercel.app/contact",
+        "name": "Contact Our Littleton Service Team",
+        "description": "Need expert Littleton cooling system repair? Get in touch with our certified technicians at (720) 473-5289 for fast, same-day service across Littleton, CO.",
+        "isPartOf": {
+          "@id": "https://refrigerator-repairpk.vercel.app/#website"
+        },
+        "breadcrumb": {
+          "@id": "https://refrigerator-repairpk.vercel.app/contact#breadcrumb"
+        },
+        "mainEntity": {
+          "@id": "https://refrigerator-repairpk.vercel.app/#localbusiness"
+        }
+      },
+      {
+        "@type": "BreadcrumbList",
+        "@id": "https://refrigerator-repairpk.vercel.app/contact#breadcrumb",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://refrigerator-repairpk.vercel.app/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Contact",
+            "item": "https://refrigerator-repairpk.vercel.app/contact"
+          }
+        ]
+      }
+    ]
+  }
+  </script>
 </head>
 
   <body class="w-full overflow-x-hidden antialiased flex flex-col min-h-screen">
@@ -163,9 +229,8 @@
           <div class="invisible absolute left-0 top-full pt-2 opacity-0 transition-all duration-200 group-hover:visible group-hover:opacity-100">
             <div class="min-w-[220px] max-h-[360px] overflow-y-auto border border-zinc-700 bg-zinc-900 shadow-2xl">
                                         <!-- RL-AUTO:nav-services START -->
-            <a href="refrigerator-not-cooling.html" class="block px-3 py-1.5 text-xs text-zinc-400 hover:text-primary transition-colors">Refrigerator not cooling</a>
-            <a href="freezer-repair.html" class="block px-3 py-1.5 text-xs text-zinc-400 hover:text-primary transition-colors">Freezer repair</a>
-            <a href="/ice-maker-repair" class="block px-3 py-1.5 text-xs text-zinc-400 hover:text-primary transition-colors">Ice maker repair</a>
+            <a href="fridge-repair.html" class="block break-words transition-colors hover:text-white">Fridge repair</a>
+              <a href="/ice-maker-repair" class="block px-3 py-1.5 text-xs text-zinc-400 hover:text-primary transition-colors">Ice maker repair</a>
             <a href="refrigerator-water-leaking.html" class="block px-3 py-1.5 text-xs text-zinc-400 hover:text-primary transition-colors">Refrigerator water leaking</a>
             <a href="freezer-not-freezing.html" class="block px-3 py-1.5 text-xs text-zinc-400 hover:text-primary transition-colors">Freezer not freezing</a>
             <a href="refrigerator-compressor-repair.html" class="block px-3 py-1.5 text-xs text-zinc-400 hover:text-primary transition-colors">Refrigerator compressor repair</a>
@@ -243,8 +308,7 @@
           </button>
           <div class="mobile-accordion-content hidden mt-1 ml-3 border-l border-zinc-800 pl-3 space-y-0.5 max-h-[220px] overflow-y-auto">
             <!-- RL-AUTO:nav-services START -->
-            <a href="refrigerator-not-cooling.html" class="block px-3 py-1.5 text-xs text-zinc-400 hover:text-primary transition-colors">Refrigerator not cooling</a>
-            <a href="freezer-repair.html" class="block px-3 py-1.5 text-xs text-zinc-400 hover:text-primary transition-colors">Freezer repair</a>
+            <a href="fridge-repair.html" class="block px-3 py-1.5 text-xs text-zinc-400 hover:text-primary transition-colors">Fridge repair</a>
             <a href="/ice-maker-repair" class="block px-3 py-1.5 text-xs text-zinc-400 hover:text-primary transition-colors">Ice maker repair</a>
             <a href="refrigerator-water-leaking.html" class="block px-3 py-1.5 text-xs text-zinc-400 hover:text-primary transition-colors">Refrigerator water leaking</a>
             <a href="freezer-not-freezing.html" class="block px-3 py-1.5 text-xs text-zinc-400 hover:text-primary transition-colors">Freezer not freezing</a><!-- RL-AUTO:nav-services END -->
@@ -390,9 +454,28 @@
             </li>
           </ul>
 
-          <a href="contact.html" class="w-full text-center bg-primary text-white text-xl font-black uppercase tracking-widest py-6 hover:bg-orange-700 transition-all active:scale-[0.98] shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] hover:shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] hover:translate-y-1 hover:translate-x-1 border-2 border-black block">
-            Get a quote
-          </a>
+          <form class="space-y-6" data-rl-lead>
+            <div>
+              <label class="block font-bold uppercase text-xs tracking-wider mb-2 text-black">First Name</label>
+              <input type="text" name="name" class="w-full border-2 border-black bg-white p-3 focus:outline-none focus:border-primary transition-colors" required />
+            </div>
+            <div>
+              <label class="block font-bold uppercase text-xs tracking-wider mb-2 text-black">Phone</label>
+              <input type="tel" name="phone" placeholder="(720) 473-5289" class="w-full border-2 border-black bg-white p-3 focus:outline-none focus:border-primary transition-colors" required />
+            </div>
+            <div>
+              <label class="block font-bold uppercase text-xs tracking-wider mb-2 text-black">Target Address / Zip</label>
+              <input type="text" name="zip" class="w-full border-2 border-black bg-white p-3 focus:outline-none focus:border-primary transition-colors" required />
+            </div>
+            <div>
+              <label class="block font-bold uppercase text-xs tracking-wider mb-2 text-black">Issue Details</label>
+              <textarea rows="4" name="message" class="w-full border-2 border-black bg-white p-3 focus:outline-none focus:border-primary transition-colors resize-none"></textarea>
+            </div>
+            <button type="submit" class="w-full bg-primary text-white font-black uppercase tracking-widest py-4 hover:bg-orange-700 transition-colors">
+              Request Service
+            </button>
+            <p class="rl-status text-sm font-bold mt-4 text-black" aria-live="polite"></p>
+          </form>
         </div>
       </section>
 
@@ -489,9 +572,9 @@
 
         <div class="grid grid-cols-1 gap-10 sm:grid-cols-3 sm:gap-8">
           <div>
-            <h2 class="mb-5 text-xs font-black uppercase tracking-[0.2em] text-primary">
+            <p class="mb-5 text-xs font-black uppercase tracking-[0.2em] text-primary">
               Pages
-            </h2>
+            </p>
             <nav class="space-y-3 text-sm font-bold uppercase tracking-wider text-zinc-400" aria-label="Pages">
               <a href="index.html" class="block transition-colors hover:text-white">Home</a>
               <a href="about.html" class="block transition-colors hover:text-white">About</a>
@@ -504,15 +587,14 @@
           </div>
 
           <div>
-            <h2 class="mb-5 text-xs font-black uppercase tracking-[0.2em] text-primary">
+            <p class="mb-5 text-xs font-black uppercase tracking-[0.2em] text-primary">
               Services
-            </h2>
+            </p>
             <div class="space-y-3 text-sm font-bold uppercase tracking-wider text-zinc-400">
                             <!-- RL-AUTO:footer-services START -->
 
-              <a href="refrigerator-not-cooling.html" class="block break-words transition-colors hover:text-white">Refrigerator not cooling</a>
-              <a href="freezer-repair.html" class="block break-words transition-colors hover:text-white">Freezer repair</a>
-              <a href="/ice-maker-repair" class="block break-words transition-colors hover:text-white">Ice maker repair</a>
+              <a href="fridge-repair.html" class="block px-3 py-1.5 text-xs text-zinc-400 hover:text-primary transition-colors">Fridge repair</a>
+            <a href="/ice-maker-repair" class="block break-words transition-colors hover:text-white">Ice maker repair</a>
               <a href="refrigerator-water-leaking.html" class="block break-words transition-colors hover:text-white">Refrigerator water leaking</a>
               <a href="freezer-not-freezing.html" class="block break-words transition-colors hover:text-white">Freezer not freezing</a>
               <a href="refrigerator-compressor-repair.html" class="block break-words transition-colors hover:text-white">Refrigerator compressor repair</a>
@@ -526,9 +608,9 @@
           </div>
 
           <div>
-            <h2 class="mb-5 text-xs font-black uppercase tracking-[0.2em] text-primary">
+            <p class="mb-5 text-xs font-black uppercase tracking-[0.2em] text-primary">
               Locations
-            </h2>
+            </p>
             <div class="space-y-3 text-sm font-bold uppercase tracking-wider text-zinc-400">
                             <!-- RL-AUTO:footer-locations START -->
               <a href="refrigerator-repair-denver-county-co.html" class="block break-words transition-colors hover:text-white">Denver County, CO</a>
