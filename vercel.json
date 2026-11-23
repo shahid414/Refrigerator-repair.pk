@@ -29,7 +29,7 @@
     },
     {
       "source": "/freezer-repair.html",
-      "destination": "/freezer-repair",
+      "destination": "/freezer-not-freezing",
       "permanent": true
     },
     {
@@ -49,7 +49,7 @@
     },
     {
       "source": "/refrigerator-not-cooling.html",
-      "destination": "/refrigerator-not-cooling",
+      "destination": "/fridge-repair",
       "permanent": true
     },
     {
@@ -179,7 +179,22 @@
     },
     {
       "source": "/refrigerator-repair-technician.html",
-      "destination": "/refrigerator-repair-technician",
+      "destination": "/about",
+      "permanent": true
+    },
+    {
+      "source": "/refrigerator-not-cooling",
+      "destination": "/fridge-repair",
+      "permanent": true
+    },
+    {
+      "source": "/freezer-repair",
+      "destination": "/freezer-not-freezing",
+      "permanent": true
+    },
+    {
+      "source": "/refrigerator-repair-technician",
+      "destination": "/about",
       "permanent": true
     },
     {
@@ -189,12 +204,12 @@
     },
     {
       "source": "/chest-freezer-repair.html",
-      "destination": "/freezer-repair",
+      "destination": "/freezer-not-freezing",
       "permanent": true
     },
     {
       "source": "/chest-freezer-repair",
-      "destination": "/freezer-repair",
+      "destination": "/freezer-not-freezing",
       "permanent": true
     },
     {

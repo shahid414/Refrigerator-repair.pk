@@ -5,9 +5,9 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Refrigerator Repair in Littleton, CO | Fast Residential Refrigerator Repair</title>
+  <title>Fridge Not Working? Same-Day Repair in Littleton, CO</title>
   <meta name="description"
-    content="Trusted residential refrigerator repair in Littleton, CO. Fast same-day refrigerator service repair, diagnostics for cooling issues, ice makers & leaks. Call (720) 473-5289!">
+    content="Need refrigerator repair in Littleton, CO? Get fast local service for cooling problems, leaks &amp; ice makers from certified techs. Call (720) 473-5289 today!">
   <meta name="keywords" content="residential refrigerator repair, refrigerator repair, refrigerators repair, refrigerator service repair, refrigerator repairs and services, refrigerator service, refrigerator repairing services">
   <meta name="author" content="Refrigerator Repair Littleton CO">
   <meta name="robots" content="index, follow">
@@ -248,100 +248,7 @@
       "closes": "23:59"
     }
   ],
-  "priceRange": "$",
-  "aggregateRating": {
-    "@type": "AggregateRating",
-    "ratingValue": "5.0",
-    "reviewCount": 6,
-    "bestRating": "5",
-    "worstRating": "1"
-  },
-  "review": [
-    {
-      "@type": "Review",
-      "author": {
-        "@type": "Person",
-        "name": "Emily R."
-      },
-      "reviewRating": {
-        "@type": "Rating",
-        "ratingValue": "5",
-        "bestRating": "5",
-        "worstRating": "1"
-      },
-      "reviewBody": "I called for refrigerator repair on a Sunday, and they were at my house within an hour. The technician was friendly and fixed the issue quickly. Highly recommend!"
-    },
-    {
-      "@type": "Review",
-      "author": {
-        "@type": "Person",
-        "name": "Mark T."
-      },
-      "reviewRating": {
-        "@type": "Rating",
-        "ratingValue": "5",
-        "bestRating": "5",
-        "worstRating": "1"
-      },
-      "reviewBody": "The team diagnosed my fridge problem efficiently. They explained everything and had my refrigerator cooling again in no time. Great service!"
-    },
-    {
-      "@type": "Review",
-      "author": {
-        "@type": "Person",
-        "name": "Sarah K."
-      },
-      "reviewRating": {
-        "@type": "Rating",
-        "ratingValue": "5",
-        "bestRating": "5",
-        "worstRating": "1"
-      },
-      "reviewBody": "I had a water leak from my refrigerator. They arrived fast and fixed it without any hassle. I'm very satisfied with their service!"
-    },
-    {
-      "@type": "Review",
-      "author": {
-        "@type": "Person",
-        "name": "James W."
-      },
-      "reviewRating": {
-        "@type": "Rating",
-        "ratingValue": "5",
-        "bestRating": "5",
-        "worstRating": "1"
-      },
-      "reviewBody": "Their technician was knowledgeable and had all the tools needed. My ice maker is working perfectly now. Thank you for the quick turnaround!"
-    },
-    {
-      "@type": "Review",
-      "author": {
-        "@type": "Person",
-        "name": "Laura M."
-      },
-      "reviewRating": {
-        "@type": "Rating",
-        "ratingValue": "5",
-        "bestRating": "5",
-        "worstRating": "1"
-      },
-      "reviewBody": "I was impressed with the professionalism. They offered a warranty on the repair, which gave me confidence. Highly recommended!"
-    },
-    {
-      "@type": "Review",
-      "author": {
-        "@type": "Person",
-        "name": "Tom B."
-      },
-      "reviewRating": {
-        "@type": "Rating",
-        "ratingValue": "5",
-        "bestRating": "5",
-        "worstRating": "1"
-      },
-      "reviewBody": "Affordable and reliable! They fixed my freezer issues quickly, and I couldn't be happier. Will definitely call them again!"
-    }
-  ]
+  "priceRange": "$"
 }
 </script>
   <script type="application/ld+json">
@@ -419,9 +326,9 @@
 
   <!-- Open Graph -->
   <meta property="og:type" content="website">
-  <meta property="og:title" content="Refrigerator Repair in Littleton, CO | Fast Same-Day Service">
+  <meta property="og:title" content="Fridge Not Working? Same-Day Repair in Littleton, CO">
   <meta property="og:description"
-    content="Trusted residential refrigerator repair in Littleton, CO. Fast same-day diagnostics for cooling issues, ice makers & leaks across Arapahoe County. Call for immediate service!">
+    content="Need refrigerator repair in Littleton, CO? Get fast local service for cooling problems, leaks &amp; ice makers from certified techs. Call (720) 473-5289 today!">
   <meta property="og:url" content="https://refrigerator-repairpk.vercel.app/">
 
   <link rel="shortcut icon" href="assets/images/favicon.png" type="image/x-icon" />
@@ -501,6 +408,12 @@
         var f = e.target;
         if (!f || !f.matches || !f.matches('form[data-rl-lead]')) return;
         var hp = f.querySelector('[name=_hp]'); if (hp && hp.value) return;
+        e.preventDefault();
+        var btn = f.querySelector('button[type=submit],input[type=submit]');
+        var status = f.querySelector('.rl-status');
+        var origText = btn ? btn.textContent : '';
+        if (btn) { btn.disabled = true; btn.textContent = 'Sending\u2026'; }
+        if (status) status.textContent = 'Sending\u2026';
         var data = {}; var els = f.querySelectorAll('input,textarea,select');
         for (var i = 0; i < els.length; i++) {
           var el = els[i]; var n = el.name;
@@ -508,7 +421,23 @@
         }
         data.pageUrl = window.location.href;
         var tok = f.querySelector('[name=cf-turnstile-response]'); if (tok && tok.value) data.turnstileToken = tok.value;
-        try { fetch(C.apiBase + '/api/leads/' + encodeURIComponent(C.siteId), { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(data), keepalive: true }).catch(function () { }); } catch (_e) { }
+        try {
+          fetch(C.apiBase + '/api/leads/' + encodeURIComponent(C.siteId), { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(data), keepalive: true }).then(function (r) {
+            if (r && r.ok) {
+              if (status) status.textContent = 'Request received \u2014 we will call you shortly.';
+              if (btn) btn.textContent = 'Request Received';
+            } else {
+              if (status) status.textContent = 'Something went wrong \u2014 please call (720) 473-5289 or try again.';
+              if (btn) { btn.disabled = false; btn.textContent = origText; }
+            }
+          }).catch(function () {
+            if (status) status.textContent = 'Something went wrong \u2014 please call (720) 473-5289 or try again.';
+            if (btn) { btn.disabled = false; btn.textContent = origText; }
+          });
+        } catch (_e) {
+          if (status) status.textContent = 'Something went wrong \u2014 please call (720) 473-5289 or try again.';
+          if (btn) { btn.disabled = false; btn.textContent = origText; }
+        }
       }, true);
     })();
   </script>
@@ -549,9 +478,6 @@
               <a href="fridge-repair.html"
                 class="block px-3 py-1.5 text-xs text-primary font-bold transition-colors">Fridge Repair
                 Services ★</a>
-              <a href="refrigerator-repair-technician.html"
-                class="block px-3 py-1.5 text-xs text-primary font-bold transition-colors">Repair
-                Technician ★</a>
               <a href="mini-fridge-repair.html"
                 class="block px-3 py-1.5 text-xs text-primary font-bold transition-colors">Mini Fridge
                 Repair ★</a>
@@ -564,11 +490,6 @@
               <a href="refrigerator-repair-samsung.html"
                 class="block px-3 py-1.5 text-xs text-zinc-300 hover:text-primary transition-colors">Samsung Refrigerator
                 Repair</a>
-              <a href="refrigerator-not-cooling.html"
-                class="block px-3 py-1.5 text-xs text-zinc-400 hover:text-primary transition-colors">Refrigerator not
-                cooling</a>
-              <a href="freezer-repair.html"
-                class="block px-3 py-1.5 text-xs text-zinc-400 hover:text-primary transition-colors">Freezer repair</a>
               <a href="/ice-maker-repair"
                 class="block px-3 py-1.5 text-xs text-zinc-400 hover:text-primary transition-colors">Ice maker
                 repair</a>
@@ -691,9 +612,6 @@
             <a href="fridge-repair.html"
               class="block px-3 py-1.5 text-xs text-primary font-bold transition-colors">Fridge Repair
               Services ★</a>
-            <a href="refrigerator-repair-technician.html"
-              class="block px-3 py-1.5 text-xs text-primary font-bold transition-colors">Repair
-              Technician ★</a>
             <a href="mini-fridge-repair.html"
               class="block px-3 py-1.5 text-xs text-primary font-bold transition-colors">Mini Fridge
               Repair ★</a>
@@ -706,11 +624,6 @@
             <a href="refrigerator-repair-samsung.html"
               class="block px-3 py-1.5 text-xs text-zinc-300 hover:text-primary transition-colors">Samsung Refrigerator
               Repair</a>
-            <a href="refrigerator-not-cooling.html"
-              class="block px-3 py-1.5 text-xs text-zinc-400 hover:text-primary transition-colors">Refrigerator not
-              cooling</a>
-            <a href="freezer-repair.html"
-              class="block px-3 py-1.5 text-xs text-zinc-400 hover:text-primary transition-colors">Freezer repair</a>
             <a href="/ice-maker-repair"
               class="block px-3 py-1.5 text-xs text-zinc-400 hover:text-primary transition-colors">Ice maker repair</a>
             <a href="why-ice-maker-stopped-working.html"
@@ -1270,6 +1183,7 @@
               <p class="text-xs text-muted-foreground leading-relaxed">
                 Caused by clogged condenser coils, failing evaporator fan motors, or defective compressor start relays. We test airflow and electronic thermistors to restore steady temperatures.
               </p>
+              <a href="fridge-repair.html" class="inline-block mt-4 text-primary font-bold text-xs uppercase tracking-wider hover:underline">Learn more →</a>
             </div>
 
             <!-- Problem 2 -->
@@ -1281,6 +1195,7 @@
               <p class="text-xs text-muted-foreground leading-relaxed">
                 Usually triggered by a frozen or blocked defrost drain tube, cracked water valve, or loose dispenser tubing. We clear obstructions and seal connections to protect flooring.
               </p>
+              <a href="refrigerator-water-leaking.html" class="inline-block mt-4 text-primary font-bold text-xs uppercase tracking-wider hover:underline">Learn more →</a>
             </div>
 
             <!-- Problem 3 -->
@@ -1292,6 +1207,7 @@
               <p class="text-xs text-muted-foreground leading-relaxed">
                 Struggling with an ice maker not making ice or cycling cubes? We inspect dual water inlet solenoid valves, frozen fill tube lines, and electronic ejector modules.
               </p>
+              <a href="ice-maker-repair.html" class="inline-block mt-4 text-primary font-bold text-xs uppercase tracking-wider hover:underline">Learn more →</a>
             </div>
 
             <!-- Problem 4 -->
@@ -1303,6 +1219,7 @@
               <p class="text-xs text-muted-foreground leading-relaxed">
                 Heavy frost covering evaporator coils points to a failed defrost heater, defective bimetal thermostat, or a worn magnetic door gasket that allows warm air infiltration.
               </p>
+              <a href="refrigerator-frost-buildup.html" class="inline-block mt-4 text-primary font-bold text-xs uppercase tracking-wider hover:underline">Learn more →</a>
             </div>
 
             <!-- Problem 5 -->
@@ -1314,6 +1231,7 @@
               <p class="text-xs text-muted-foreground leading-relaxed">
                 Rattling or loud clicking is commonly traced to worn condenser fan bearings, loose vibration dampeners, or a struggling compressor start capacitor.
               </p>
+              <a href="noisy-refrigerator-repair.html" class="inline-block mt-4 text-primary font-bold text-xs uppercase tracking-wider hover:underline">Learn more →</a>
             </div>
 
             <!-- Problem 6 -->
@@ -1325,6 +1243,7 @@
               <p class="text-xs text-muted-foreground leading-relaxed">
                 Wondering <strong>why is my refrigerator running all the time</strong>? If your compressor never cycles off, our technicians inspect dusty condenser coils, failing temperature thermistors, defrost timers, and electronic control boards to restore efficient cooling cycles.
               </p>
+              <a href="why-refrigerator-runs-constantly.html" class="inline-block mt-4 text-primary font-bold text-xs uppercase tracking-wider hover:underline">Learn more →</a>
             </div>
 
           </div>
@@ -1861,8 +1780,7 @@
         <h2 class="text-xl sm:text-2xl font-black uppercase tracking-tighter mb-8 text-foreground">
           Request Immediate Action
         </h2>
-        <form class="space-y-6" data-rl-lead
-          onsubmit="event.preventDefault();var b=this.querySelector('button[type=submit]');if(b){b.disabled=true;b.textContent='Request Received';}">
+        <form class="space-y-6" data-rl-lead>
           <div class="grid grid-cols-2 gap-6">
             <div class="col-span-2 sm:col-span-1">
               <label class="block font-bold uppercase text-xs tracking-wider mb-2">First Name</label>
@@ -1890,8 +1808,9 @@
           </div>
           <button type="submit"
             class="w-full bg-black text-white font-black uppercase tracking-widest py-4 hover:bg-primary transition-colors">
-            Submit Target Data
+            Request Service
           </button>
+          <p class="rl-status text-sm font-bold mt-4" aria-live="polite"></p>
         </form>
       </div>
     </section>
@@ -1929,9 +1848,9 @@
 
         <div class="grid grid-cols-1 gap-10 sm:grid-cols-3 sm:gap-8">
           <div>
-            <h2 class="mb-5 text-xs font-black uppercase tracking-[0.2em] text-primary">
+            <p class="mb-5 text-xs font-black uppercase tracking-[0.2em] text-primary">
               Pages
-            </h2>
+            </p>
             <nav class="space-y-3 text-sm font-bold uppercase tracking-wider text-zinc-400" aria-label="Pages">
               <a href="index.html" class="block transition-colors hover:text-white">Home</a>
               <a href="about.html" class="block transition-colors hover:text-white">About</a>
@@ -1944,16 +1863,12 @@
           </div>
 
           <div>
-            <h2 class="mb-5 text-xs font-black uppercase tracking-[0.2em] text-primary">
+            <p class="mb-5 text-xs font-black uppercase tracking-[0.2em] text-primary">
               Services
-            </h2>
+            </p>
             <div class="space-y-3 text-sm font-bold uppercase tracking-wider text-zinc-400">
               <!-- RL-AUTO:footer-services START -->
 
-              <a href="refrigerator-not-cooling.html"
-                class="block break-words transition-colors hover:text-white">Refrigerator not cooling</a>
-              <a href="freezer-repair.html" class="block break-words transition-colors hover:text-white">Freezer
-                repair</a>
               <a href="/ice-maker-repair" class="block break-words transition-colors hover:text-white">Ice maker
                 repair</a>
               <a href="why-ice-maker-stopped-working.html" class="block break-words transition-colors hover:text-white">Why did my ice maker stop making ice</a>
@@ -1977,9 +1892,9 @@
           </div>
 
           <div>
-            <h2 class="mb-5 text-xs font-black uppercase tracking-[0.2em] text-primary">
+            <p class="mb-5 text-xs font-black uppercase tracking-[0.2em] text-primary">
               Locations
-            </h2>
+            </p>
             <div class="space-y-3 text-sm font-bold uppercase tracking-wider text-zinc-400">
               <!-- RL-AUTO:footer-locations START -->
               <a href="refrigerator-repair-denver-county-co.html"
